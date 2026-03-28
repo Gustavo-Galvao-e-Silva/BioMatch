@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import User, PatientStatus
-from app.schemas.patient_status import PatientStatusCreate, PatientStatusOut
+from app.schemas import PatientStatusCreate, PatientStatusOut
 
 router = APIRouter(prefix="/patient-status", tags=["patient-statuses"])
 

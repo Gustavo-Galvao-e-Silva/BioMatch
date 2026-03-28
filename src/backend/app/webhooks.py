@@ -11,12 +11,12 @@ from app.models import User
 
 router = APIRouter(prefix="/webhooks", tags=["webhooks"])
 
-CLERK_WEBHOOK_SECRET = os.getenv("CLERK_WEBHOOK_SECRET")
-
 
 @router.post("/clerk")
 async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
-    if not CLERK_WEBHOOK_SECRET:
+    clerk_webhook_secret = os.getenv("CLERK_WEBHOOK_SECRET")
+
+    if not clerk_webhook_secret:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="CLERK_WEBHOOK_SECRET is not configured",
@@ -41,7 +41,7 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
     }
 
     try:
-        wh = Webhook(CLERK_WEBHOOK_SECRET)
+        wh = Webhook(clerk_webhook_secret)
         event = wh.verify(payload_bytes, headers)
     except WebhookVerificationError:
         raise HTTPException(
@@ -69,11 +69,7 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
 
         first_name = data.get("first_name") or ""
         last_name = data.get("last_name") or ""
-        full_name = f"{first_name} {last_name}".strip()
-
-        if not full_name:
-            username = data.get("username")
-            full_name = username or "User"
+        full_name = f"{first_name} {last_name}".strip() or (data.get("username") or "User")
 
         existing = db.execute(
             select(User).where(User.clerk_user_id == clerk_user_id)
