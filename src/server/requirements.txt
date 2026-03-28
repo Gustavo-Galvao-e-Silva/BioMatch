@@ -1,2 +1,7 @@
 fastapi
 requests
+google-genai
+python-dotenv
+sentence-transformers
+chromadb
+openai

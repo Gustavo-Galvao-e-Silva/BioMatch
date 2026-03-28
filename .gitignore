@@ -17,6 +17,9 @@ env/
 # Data files (can be large / contain PHI)
 *.json
 
+# Vector store
+chroma_db/
+
 # OS
 .DS_Store
 Thumbs.db
