@@ -3,3 +3,4 @@ uvicorn[standard]>=0.32.0
 sqlalchemy 
 psycopg 
 pydantic[email]
+svix
