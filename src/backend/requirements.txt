@@ -10,3 +10,5 @@ sentence-transformers
 chromadb
 openai
 svix
+svix
+python-dotenv

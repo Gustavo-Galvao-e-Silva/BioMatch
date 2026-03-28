@@ -10,6 +10,7 @@ from app.database import Base, engine
 from app.webhooks import router as webhook_router
 from app.api.patient_status import router as patient_status_router
 from app.api.research import router as research_router
+from fastapi import FastAPI
 
 app = FastAPI()
 
@@ -18,7 +19,9 @@ app.include_router(patient_status_router)
 app.include_router(research_router)
 
 
-Base.metadata.create_all(bind=engine)
+@app.get("/routes")
+def list_routes():
+    return [route.path for route in app.routes]
 
 @app.get("/")
 def root():

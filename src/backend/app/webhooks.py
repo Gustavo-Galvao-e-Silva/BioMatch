@@ -46,7 +46,6 @@ def _clerk_full_name(data: dict) -> str:
 
 
 def _user_fields_from_clerk(data: dict) -> dict:
-    """Maps Clerk `data` object to `User` model columns (identity fields)."""
     return {
         "clerk_user_id": data["id"],
         "email": _clerk_primary_email(data),
@@ -56,10 +55,6 @@ def _user_fields_from_clerk(data: dict) -> dict:
 
 
 def _sync_user_from_clerk(db: Session, data: dict) -> tuple[User, bool]:
-    """
-    Insert or update a User row from Clerk webhook payload.
-    Returns (user, created).
-    """
     fields = _user_fields_from_clerk(data)
     clerk_user_id = fields["clerk_user_id"]
 
@@ -85,7 +80,6 @@ def _sync_user_from_clerk(db: Session, data: dict) -> tuple[User, bool]:
     db.commit()
     db.refresh(user)
     return user, True
-
 
 @router.post("/clerk")
 async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
@@ -163,7 +157,7 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
         message = "User created" if created else "User updated"
         return {
             "status": "ok",
-            "message": message,
+            "message": "User created" if created else "User updated",
             "user_id": user.id,
         }
 
@@ -174,12 +168,15 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Missing user id",
             )
+
         user = db.execute(
             select(User).where(User.clerk_user_id == clerk_user_id)
         ).scalar_one_or_none()
+
         if user:
             db.delete(user)
             db.commit()
+
         return {"status": "ok", "message": "User deleted"}
 
     return {
