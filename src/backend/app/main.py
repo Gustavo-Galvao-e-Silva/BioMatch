@@ -1,80 +1,32 @@
-from fastapi import Depends, FastAPI, HTTPException
-from sqlalchemy import select
-from sqlalchemy.orm import Session
+from pathlib import Path
+from dotenv import load_dotenv
 
-from .database import Base, engine, get_db
-from .models import Researcher, Paper
-from .schemas import (
-    ResearcherCreate,
-    ResearcherOut,
-    PaperCreate,
-    PaperOut,
-)
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / ".env")
+
+from fastapi import FastAPI
+
+from app.database import Base, engine
+from app.webhooks import router as webhook_router
+from app.api.patient_status import router as patient_status_router
+from app.api.research import router as research_router
+from fastapi import FastAPI
 
 app = FastAPI()
 
-Base.metadata.create_all(bind=engine)
+app.include_router(webhook_router)
+app.include_router(patient_status_router)
+app.include_router(research_router)
 
 
-@app.post("/researchers", response_model=ResearcherOut)
-def create_researcher(payload: ResearcherCreate, db: Session = Depends(get_db)):
-    existing = db.execute(
-        select(Researcher).where(Researcher.clerk_user_id == payload.clerk_user_id)
-    ).scalar_one_or_none()
+@app.get("/routes")
+def list_routes():
+    return [route.path for route in app.routes]
 
-    if existing:
-        raise HTTPException(status_code=409, detail="Researcher already exists")
+@app.get("/")
+def root():
+    return {"message": "API is running"}
 
-    researcher = Researcher(
-        clerk_user_id=payload.clerk_user_id,
-        orcid_id=payload.orcid_id,
-        full_name=payload.full_name,
-        email=payload.email,
-    )
-    db.add(researcher)
-    db.commit()
-    db.refresh(researcher)
-    return researcher
-
-
-@app.get("/researchers/{researcher_id}", response_model=ResearcherOut)
-def get_researcher(researcher_id: int, db: Session = Depends(get_db)):
-    researcher = db.get(Researcher, researcher_id)
-    if not researcher:
-        raise HTTPException(status_code=404, detail="Researcher not found")
-    return researcher
-
-
-@app.post("/researchers/{researcher_id}/papers", response_model=PaperOut)
-def create_paper(
-    researcher_id: int,
-    payload: PaperCreate,
-    db: Session = Depends(get_db),
-):
-    researcher = db.get(Researcher, researcher_id)
-    if not researcher:
-        raise HTTPException(status_code=404, detail="Researcher not found")
-
-    paper = Paper(
-        researcher_id=researcher_id,
-        title=payload.title,
-        abstract=payload.abstract,
-        doi=payload.doi,
-    )
-    db.add(paper)
-    db.commit()
-    db.refresh(paper)
-    return paper
-
-
-@app.get("/researchers/{researcher_id}/papers", response_model=list[PaperOut])
-def list_papers(researcher_id: int, db: Session = Depends(get_db)):
-    researcher = db.get(Researcher, researcher_id)
-    if not researcher:
-        raise HTTPException(status_code=404, detail="Researcher not found")
-
-    papers = db.execute(
-        select(Paper).where(Paper.researcher_id == researcher_id)
-    ).scalars().all()
-
-    return papers
+@app.get("/routes")
+def list_routes():
+    return [route.path for route in app.routes]
