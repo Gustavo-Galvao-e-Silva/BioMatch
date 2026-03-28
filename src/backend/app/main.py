@@ -10,7 +10,6 @@ from app.database import Base, engine
 from app.webhooks import router as webhook_router
 from app.api.patient_status import router as patient_status_router
 
-
 app = FastAPI()
 
 app.include_router(webhook_router)

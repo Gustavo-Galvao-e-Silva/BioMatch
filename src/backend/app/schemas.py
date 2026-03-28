@@ -35,15 +35,25 @@ class ResearcherOut(BaseModel):
 
 
 class PatientStatusCreate(BaseModel):
-    status: str
-    notes: str | None = None
+    user_id: int
+    description: str | None = None
+    history: str | None = None
+    medical_notes: str | None = None
+    medical_summary: str | None = None
+    conditions: list[str] = []
+    drugs: list[str] = []
+    symptoms: list[str] = []
 
 
 class PatientStatusOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     id: int
-    status: str
-    notes: str | None = None
     user_id: int
-    created_at: datetime
+    description: str | None
+    history: str | None
+    medical_notes: str | None
+    medical_summary: str | None
+    conditions: list[str]
+    drugs: list[str]
+    symptoms: list[str]
