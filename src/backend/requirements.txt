@@ -1,5 +1,11 @@
 fastapi>=0.115.0
 uvicorn[standard]>=0.32.0
-sqlalchemy 
-psycopg 
+sqlalchemy
+psycopg
 pydantic[email]
+requests
+google-genai
+python-dotenv
+sentence-transformers
+chromadb
+openai
