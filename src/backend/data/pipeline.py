@@ -111,6 +111,11 @@ def _extract(study: dict) -> dict:
             for loc in locations[:5]
         ],
         "sponsor": sponsor_mod.get("leadSponsor", {}).get("name"),
+        "contact_emails": list({
+            c["email"]
+            for c in contacts_mod.get("centralContacts", [])
+            if c.get("email")
+        }),
     }
 
 
@@ -258,9 +263,10 @@ def _clean(raw: dict) -> dict:
             "inclusion_criteria": inclusion,
             "exclusion_criteria": exclusion,
         },
-        "locations":    locations,
-        "countries":    countries,
-        "sponsor":      raw.get("sponsor"),
+        "locations":      locations,
+        "countries":      countries,
+        "sponsor":        raw.get("sponsor"),
+        "contact_emails": raw.get("contact_emails") or [],
         "search_text":  _build_search_text(raw, min_age, max_age, sex, inclusion, exclusion, countries),
     }
 

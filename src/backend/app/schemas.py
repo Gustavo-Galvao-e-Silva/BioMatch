@@ -96,6 +96,7 @@ class ResearchStudyCreate(BaseModel):
     locations: list[StudyLocation]
     countries: list[str]
     sponsor: str
+    contact_emails: list[str] = []
     search_text: str | None = None
 
 
@@ -121,6 +122,7 @@ class ResearchStudyOut(BaseModel):
     locations: list[StudyLocation]
     countries: list[str]
     sponsor: str | None
+    contact_emails: list[str]
     search_text: str | None
     created_at: datetime
 
