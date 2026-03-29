@@ -13,6 +13,7 @@ import DoctorDashboard from "./pages/doctor/Dashboard";
 
 import ResearcherDashboard from "./pages/researcher/Dashboard";
 import ClaimResearch from "./pages/researcher/ClaimResearch";
+import PatientMessagesPage from "./pages/PatientMessagesPage";
 
 export const router = createBrowserRouter([
   { path: "/login/*", Component: LoginPage, },
@@ -23,6 +24,7 @@ export const router = createBrowserRouter([
   { path: "/auth-test", Component: AuthTestPage, },
   
   { path: "/patient", Component: PatientDashboard, },
+  { path: "/patient/messages", Component: PatientMessagesPage, },
 
   { path: "/doctor", Component: DoctorDashboard, },
 
