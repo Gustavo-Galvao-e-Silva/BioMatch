@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     Component: LandingPage,
   },
   {
-    path: "/login",
+    path: "/login/*",
     Component: LoginPage,
   },
   {
