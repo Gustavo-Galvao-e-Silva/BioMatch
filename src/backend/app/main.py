@@ -1,6 +1,7 @@
 from pathlib import Path
 from dotenv import load_dotenv
 
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / ".env")
 
@@ -11,6 +12,8 @@ from app.webhooks import router as webhook_router
 from app.api.patient_status import router as patient_status_router
 from app.api.research import router as research_router
 from app.api.chatbot import router as chatbot_router
+from app.api.chat import router as chat_router
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -33,6 +36,7 @@ app.include_router(webhook_router)
 app.include_router(patient_status_router)
 app.include_router(research_router)
 app.include_router(chatbot_router)
+app.include_router(chat_router)
 
 @app.get("/routes")
 def list_routes():

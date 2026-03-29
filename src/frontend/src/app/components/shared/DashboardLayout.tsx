@@ -63,14 +63,16 @@ export function DashboardLayout({ children, role }: LayoutProps) {
             ))}
           </nav>
 
-          <div className="px-4 mb-6">
-            <Link to="/researcher/claim">
-              <Button className="w-full gap-2 shadow-lg glow bg-primary hover:bg-primary/90">
-                <Fingerprint className="w-4 h-4" />
-                Claim a Research
-              </Button>
-            </Link>
-          </div>
+          {role === "researcher" && (
+            <div className="px-4 mb-6">
+              <Link to="/researcher/claim">
+                <Button className="w-full gap-2 shadow-lg glow bg-primary hover:bg-primary/90">
+                  <Fingerprint className="w-4 h-4" />
+                  Claim a Research
+                </Button>
+              </Link>
+            </div>
+          )}
 
           <div className="p-4 border-t border-border">
             <button className="flex items-center gap-3 px-4 py-3 w-full text-muted-foreground hover:text-primary transition-colors">
