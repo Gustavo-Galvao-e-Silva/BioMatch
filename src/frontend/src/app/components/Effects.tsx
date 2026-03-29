@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import { Navigation } from "lucide-react";
 
 interface TypewriterTextProps {
   texts: string[];

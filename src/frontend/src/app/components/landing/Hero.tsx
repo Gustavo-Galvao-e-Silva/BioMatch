@@ -2,11 +2,13 @@ import { motion } from "motion/react";
 import { Link } from "react-router";
 import { Button } from "../ui/button";
 import { ArrowRight, Sparkles, FlaskConical, UserRound, TrendingUp } from "lucide-react";
+import { DecryptText } from "../shared/DecryptText";
 
 const MotionDiv = motion.div;
 
 export function Hero() {
     return (
+
       <section className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 relative">
         <div className="max-w-7xl mx-auto w-full">
           <div className="text-center max-w-4xl mx-auto space-y-8">
@@ -44,9 +46,9 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
-                Intelligent matching system between patients and clinical trials,
+                <DecryptText text="Intelligent matching system between patients and clinical trials,
                 facilitating access to innovative treatments through AI and medical
-                record analysis.
+                record analysis." />
               </p>
             </MotionDiv>
 
@@ -96,5 +98,6 @@ export function Hero() {
           </div>
         </div>
       </section>
+    
     );
 }

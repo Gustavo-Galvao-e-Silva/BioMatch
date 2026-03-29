@@ -45,7 +45,7 @@ export function TrialDetails({ trial, onBack }: TrialDetailsProps) {
           </div>
 
           {/* Coluna de Ação (Match + Botão) */}
-          <div className="flex flex-col items-center gap-3 bg-card/50 p-4 rounded-2xl border border-border min-w-[180px]">
+          <div className="flex flex-col items-center gap-3 bg-card/50 p-4 rounded-2xl border border-border min-w-45">
             <div className="text-center">
               <div className="text-4xl font-black text-secondary">{trial.match}%</div>
               <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider">Match Score</div>
