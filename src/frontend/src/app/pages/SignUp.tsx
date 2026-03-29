@@ -136,7 +136,7 @@ export default function SignUpPage() {
 
       <div className="mx-auto flex min-h-[calc(100vh-73px)] max-w-6xl items-center justify-center px-6 py-12">
         <div className="grid w-full overflow-hidden rounded-3xl border border-[#2FCED6]/30 bg-white shadow-2xl md:grid-cols-2">
-          <div className="hidden flex-col justify-between bg-gradient-to-br from-[#296870] via-[#0A7F8A] to-[#037682] p-10 text-[#EFFAFF] md:flex">
+          <div className="hidden flex-col justify-between bg-linear-to-br from-[#296870] via-[#0A7F8A] to-[#037682] p-10 text-[#EFFAFF] md:flex">
             <div>
               <p className="mb-3 text-sm uppercase tracking-[0.25em] text-[#EFFAFF]/70">
                 Aura
