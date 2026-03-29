@@ -30,5 +30,4 @@ export const router = createBrowserRouter([
   { path: "/researcher/claim", Component: ClaimResearch, },
   { path: "/researcher/manage", Component: ResearcherDashboard, },
   { path: "/researcher/messages", Component: ResearcherDashboard, },
-  { path: "/patient-dashboard", Component: ChatbotPage,}
 ]);

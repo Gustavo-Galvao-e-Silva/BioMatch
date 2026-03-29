@@ -65,7 +65,7 @@ export default function ChatPage() {
       setMessages((prev) => [...prev, assistantMessage]);
 
       if (data.end === true) {
-        navigate("/patient-dashboard");
+        navigate("/patient");
         return;
       }
     } catch (error) {
