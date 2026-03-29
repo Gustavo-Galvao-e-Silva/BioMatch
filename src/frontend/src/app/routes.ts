@@ -25,5 +25,8 @@ export const router = createBrowserRouter([
   {
     path: "/auth-test",
     Component: AuthTestPage,
-  },
+  },{
+    path: "/patient",
+    Component: LandingPage,
+  }
 ]);

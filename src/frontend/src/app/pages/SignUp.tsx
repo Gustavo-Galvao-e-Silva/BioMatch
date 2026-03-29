@@ -71,8 +71,13 @@ export default function SignUpPage() {
 
       if (result.status === "complete") {
         await setActive({ session: result.createdSessionId });
-        navigate("/");
-        return;
+        const redirectByRole: Record<Role, string> = {
+            user: "/patient",
+            doctor: "/doctor",
+            researcher: "/research",
+        };
+
+        navigate(redirectByRole[form.role]);
       }
 
       if (result.status === "missing_requirements") {
