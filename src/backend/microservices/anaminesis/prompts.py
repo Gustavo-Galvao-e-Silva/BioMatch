@@ -12,7 +12,7 @@ class Prompt(Enum):
 
 @lru_cache(maxsize=7)
 def load_prompt(prompt: Prompt):
-    with open(os.path.join("prompts", "anamnesis_prompts", prompt), "r") as file:
+    with open(os.path.join("prompts", "anamnesis_prompts", prompt.value), "r") as file:
         return file.read()
 
 
