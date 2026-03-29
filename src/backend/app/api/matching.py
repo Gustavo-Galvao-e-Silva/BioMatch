@@ -3,7 +3,7 @@ from sqlalchemy import cast, Float, or_
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import PatientStatus, ResearchStudy
+from app.models import PatientStatus, ResearchStudy, User
 from app.schemas import PatientMatchOut, PatientStatusOut, ResearchStudyOut, StudyMatchOut
 from data.embedder import get_embedder
 
@@ -25,24 +25,42 @@ def build_patient_query_text(patient: PatientStatus) -> str:
     return "\n\n".join(parts)
 
 
-def _to_score(cosine_distance: float) -> float:
-    return round(max(0.0, 1.0 - cosine_distance) * 10, 2)
+def _compute_score(
+    cosine_distance: float,
+    patient: PatientStatus,
+    study: ResearchStudy,
+) -> float:
+    similarity = max(0.0, 1.0 - cosine_distance)
+    base = similarity ** 0.5 * 8.0
+
+    bonus = 0.0
+
+    # Condition overlap: +1.0 per match, cap at 1.0
+    if patient.conditions:
+        patient_conds = {c.lower() for c in patient.conditions}
+        study_conds = set(study.conditions_normalized or [])
+        bonus += min(1.0, len(patient_conds & study_conds) * 1.0)
+
+    # Drug / intervention overlap: +0.5 per match, cap at 0.5
+    if patient.drugs:
+        patient_drug_tokens = {d.lower().split()[0] for d in patient.drugs}
+        study_interventions = study.intervention_names or []
+        drug_hits = sum(
+            1 for token in patient_drug_tokens
+            if any(token in name for name in study_interventions)
+        )
+        bonus += min(0.5, drug_hits * 0.5)
+
+    return round(min(10.0, base + bonus), 2)
 
 
-@router.get("/patient/{patient_status_id}", response_model=list[StudyMatchOut])
-def match_patient_to_studies(
-    patient_status_id: int,
-    db: Session = Depends(get_db),
-):
-    patient = db.get(PatientStatus, patient_status_id)
-    if not patient:
-        raise HTTPException(status_code=404, detail="PatientStatus not found")
-
+def _query_matches_for_patient(
+    patient: PatientStatus, db: Session, limit: int = 20
+) -> list[tuple[ResearchStudy, float]]:
+    """Run hard filter + similarity search for a single PatientStatus."""
     query_text = build_patient_query_text(patient)
     if not query_text.strip():
-        raise HTTPException(
-            status_code=422, detail="Patient has no medical information to match on"
-        )
+        return []
 
     embedder = get_embedder("local")
     patient_vec = embedder.embed(query_text)
@@ -64,17 +82,45 @@ def match_patient_to_studies(
 
     distance_col = ResearchStudy.study_embedding.cosine_distance(patient_vec).label("distance")
 
-    rows = (
+    return (
         db.query(ResearchStudy, distance_col)
         .filter(*filters)
         .order_by("distance")
-        .limit(10)
+        .limit(limit)
         .all()
     )
 
+
+@router.get("/patient/{user_id}", response_model=list[StudyMatchOut])
+def match_user_to_studies(
+    user_id: int,
+    db: Session = Depends(get_db),
+):
+    user = db.get(User, user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+
+    statuses = (
+        db.query(PatientStatus)
+        .filter(PatientStatus.user_id == user_id)
+        .all()
+    )
+    if not statuses:
+        raise HTTPException(status_code=404, detail="No patient statuses found for this user")
+
+    # Collect best score per study across all statuses, then rank
+    best: dict[int, tuple[ResearchStudy, float]] = {}
+    for status in statuses:
+        for study, dist in _query_matches_for_patient(status, db):
+            score = _compute_score(dist, status, study)
+            if study.id not in best or score > best[study.id][1]:
+                best[study.id] = (study, score)
+
+    ranked = sorted(best.values(), key=lambda x: x[1], reverse=True)[:10]
+
     return [
-        StudyMatchOut(study=ResearchStudyOut.model_validate(study), score=_to_score(dist))
-        for study, dist in rows
+        StudyMatchOut(study=ResearchStudyOut.model_validate(study), score=score)
+        for study, score in ranked
     ]
 
 
@@ -124,7 +170,8 @@ def match_study_to_patients(
 
     return [
         PatientMatchOut(
-            patient=PatientStatusOut.model_validate(patient), score=_to_score(dist)
+            patient=PatientStatusOut.model_validate(patient),
+            score=_compute_score(dist, patient, study),
         )
         for patient, dist in rows
     ]
