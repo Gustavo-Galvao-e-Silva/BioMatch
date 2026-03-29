@@ -5,7 +5,6 @@ import httpx
 router = APIRouter(prefix="/chatbot", tags=["chatbot"])
 
 
-# Change this to the IP and endpoint of the other server
 UPSTREAM_CHATBOT_URL = "http://127.0.0.1:9000/chat"
 
 
@@ -15,12 +14,11 @@ class ChatRequest(BaseModel):
 
 class ChatResponse(BaseModel):
     response: str
+    end: bool = False
 
 
 @router.post("/post_patient_message", response_model=ChatResponse)
 async def send_message_to_chatbot(payload: ChatRequest):
-    print("as")
-
     try:
         async with httpx.AsyncClient(timeout=30.0) as client:
             upstream_response = await client.post(
@@ -55,4 +53,7 @@ async def send_message_to_chatbot(payload: ChatRequest):
             detail="Upstream chatbot response missing 'response' field",
         )
 
-    return ChatResponse(response=data["response"])
+    return ChatResponse(
+        response=data["response"],
+        end=bool(data.get("end", False)),
+    )

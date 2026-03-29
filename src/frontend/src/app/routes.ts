@@ -4,6 +4,8 @@ import LoginPage from "./pages/LoginPage";
 import Dashboard from "./pages/Dashboard";
 import AuthTestPage from "./pages/AuthTestPage";
 import SignUpPage from "./pages/SignUp";
+import ChatbotPage from "./pages/Patient_Chatbot";
+
 
 import PatientDashboard from "./pages/patient/Dashboard";
 
@@ -28,4 +30,5 @@ export const router = createBrowserRouter([
   { path: "/researcher/claim", Component: ClaimResearch, },
   { path: "/researcher/manage", Component: ResearcherDashboard, },
   { path: "/researcher/messages", Component: ResearcherDashboard, },
+  { path: "/patient-dashboard", Component: ChatbotPage,}
 ]);
