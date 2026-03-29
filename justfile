@@ -16,3 +16,9 @@ front:
 start:
     just back & just front
 
+pipeline *ARGS:
+    cd src/backend && .venv/bin/python data/pipeline.py {{ARGS}}
+
+seed *ARGS:
+    cd src/backend && .venv/bin/python data/seed_db.py {{ARGS}}
+

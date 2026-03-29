@@ -42,7 +42,11 @@
         "lon": 10.82617
       }
     ],
-    "sponsor": "University of Monastir"
+    "sponsor": "University of Monastir",
+    "contact_emails": [
+      "semir.nouira@rns.tn",
+      "belhadjalikhaoula@yahoo.fr"
+    ]
   },
   {
     "nct_id": "NCT06989697",
@@ -87,7 +91,11 @@
         "lon": 127.13778
       }
     ],
-    "sponsor": "Seoul National University Bundang Hospital"
+    "sponsor": "Seoul National University Bundang Hospital",
+    "contact_emails": [
+      "limsoo@snu.ac.kr",
+      "rainbowmjs@naver.com"
+    ]
   },
   {
     "nct_id": "NCT05182970",
@@ -130,7 +138,11 @@
         "lon": 13.94082
       }
     ],
-    "sponsor": "Karolinska Institutet"
+    "sponsor": "Karolinska Institutet",
+    "contact_emails": [
+      "anna.norhammar@ki.se",
+      "viveca.ritsinger@ki.se"
+    ]
   },
   {
     "nct_id": "NCT07193459",
@@ -178,7 +190,8 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Hangzhou Zhongmei Huadong Pharmaceutical Co., Ltd."
+    "sponsor": "Hangzhou Zhongmei Huadong Pharmaceutical Co., Ltd.",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06716203",
@@ -226,7 +239,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "BrightGene Bio-Medical Technology Co., Ltd."
+    "sponsor": "BrightGene Bio-Medical Technology Co., Ltd.",
+    "contact_emails": [
+      "jiln@bjmu.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT04670666",
@@ -286,7 +302,10 @@
         "lon": -47.22
       }
     ],
-    "sponsor": "EMS"
+    "sponsor": "EMS",
+    "contact_emails": [
+      "pesquisa.clinica@ncfarma.com.br"
+    ]
   },
   {
     "nct_id": "NCT06972459",
@@ -363,7 +382,11 @@
         "lon": -118.83759
       }
     ],
-    "sponsor": "Eli Lilly and Company"
+    "sponsor": "Eli Lilly and Company",
+    "contact_emails": [
+      "LillyTrials@Lilly.com",
+      "clinical_inquiry_hub@lilly.com"
+    ]
   },
   {
     "nct_id": "NCT07104383",
@@ -435,7 +458,10 @@
         "lon": -111.84125
       }
     ],
-    "sponsor": "Viking Therapeutics, Inc."
+    "sponsor": "Viking Therapeutics, Inc.",
+    "contact_emails": [
+      "Clinicaltrials@vikingtherapeutics.com"
+    ]
   },
   {
     "nct_id": "NCT06451757",
@@ -514,7 +540,11 @@
         "lon": -0.58046
       }
     ],
-    "sponsor": "Khondrion BV"
+    "sponsor": "Khondrion BV",
+    "contact_emails": [
+      "Khenerfin@khondrion.com",
+      "Khenerfin@khondrion.com"
+    ]
   },
   {
     "nct_id": "NCT05305794",
@@ -562,7 +592,10 @@
         "lon": 5.01391
       }
     ],
-    "sponsor": "Centre Hospitalier Universitaire Dijon"
+    "sponsor": "Centre Hospitalier Universitaire Dijon",
+    "contact_emails": [
+      "benjamin.bouillet@chu-dijon.fr"
+    ]
   },
   {
     "nct_id": "NCT06642363",
@@ -607,7 +640,11 @@
         "lon": 51.67462
       }
     ],
-    "sponsor": "Isfahan University of Medical Sciences"
+    "sponsor": "Isfahan University of Medical Sciences",
+    "contact_emails": [
+      "miladnacri@gmail.com",
+      "miladnasiri.j@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06893016",
@@ -651,7 +688,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Guangdong Raynovent Biotech Co., Ltd"
+    "sponsor": "Guangdong Raynovent Biotech Co., Ltd",
+    "contact_emails": [
+      "pkuphiao@163.com"
+    ]
   },
   {
     "nct_id": "NCT06303544",
@@ -691,7 +731,11 @@
         "lon": -149.90028
       }
     ],
-    "sponsor": "Alaska Native Tribal Health Consortium"
+    "sponsor": "Alaska Native Tribal Health Consortium",
+    "contact_emails": [
+      "bjstillwater@anthc.org",
+      "tkthomas@anthc.org"
+    ]
   },
   {
     "nct_id": "NCT06894498",
@@ -762,7 +806,10 @@
         "lon": 75.8333
       }
     ],
-    "sponsor": "Boston Scientific Corporation"
+    "sponsor": "Boston Scientific Corporation",
+    "contact_emails": [
+      "maxime.oriol@bsci.com"
+    ]
   },
   {
     "nct_id": "NCT05700409",
@@ -802,7 +849,10 @@
         "lon": 34.81065
       }
     ],
-    "sponsor": "Sheba Medical Center"
+    "sponsor": "Sheba Medical Center",
+    "contact_emails": [
+      "gal.dubnov-raz@sheba.gov.il"
+    ]
   },
   {
     "nct_id": "NCT06541509",
@@ -860,7 +910,11 @@
         "lon": 14.50513
       }
     ],
-    "sponsor": "University Medical Centre Ljubljana"
+    "sponsor": "University Medical Centre Ljubljana",
+    "contact_emails": [
+      "bojan.vrtovec@kclj.si",
+      "sabina.frljak@kclj.si"
+    ]
   },
   {
     "nct_id": "NCT07479498",
@@ -904,7 +958,10 @@
         "lon": -111.89105
       }
     ],
-    "sponsor": "Paul Estabrooks"
+    "sponsor": "Paul Estabrooks",
+    "contact_emails": [
+      "madeleine.french@utah.edu"
+    ]
   },
   {
     "nct_id": "NCT06811493",
@@ -944,7 +1001,11 @@
         "lon": 31.24967
       }
     ],
-    "sponsor": "Kasr El Aini Hospital"
+    "sponsor": "Kasr El Aini Hospital",
+    "contact_emails": [
+      "emadabady73@gmail.com",
+      "bilal.j.khater@student.kasralainy.edu.eg"
+    ]
   },
   {
     "nct_id": "NCT04220463",
@@ -990,7 +1051,8 @@
         "lon": -1.67431
       }
     ],
-    "sponsor": "Rennes University Hospital"
+    "sponsor": "Rennes University Hospital",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07243821",
@@ -1024,7 +1086,10 @@
         "lon": 121.52639
       }
     ],
-    "sponsor": "National Taiwan University Hospital"
+    "sponsor": "National Taiwan University Hospital",
+    "contact_emails": [
+      "biopsycosocial@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06569121",
@@ -1068,7 +1133,8 @@
         "lon": -96.80667
       }
     ],
-    "sponsor": "Baylor Research Institute"
+    "sponsor": "Baylor Research Institute",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07378163",
@@ -1107,7 +1173,10 @@
         "lon": 108.92861
       }
     ],
-    "sponsor": "Xijing Hospital"
+    "sponsor": "Xijing Hospital",
+    "contact_emails": [
+      "Woshigaochao@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06175104",
@@ -1175,7 +1244,11 @@
         "lon": 150.98768
       }
     ],
-    "sponsor": "Children's Hospital Medical Center, Cincinnati"
+    "sponsor": "Children's Hospital Medical Center, Cincinnati",
+    "contact_emails": [
+      "nadine.kasparian@cchmc.org",
+      "james.cnota@cchmc.org"
+    ]
   },
   {
     "nct_id": "NCT07133984",
@@ -1246,7 +1319,10 @@
         "lon": -114.08529
       }
     ],
-    "sponsor": "Weill Medical College of Cornell University"
+    "sponsor": "Weill Medical College of Cornell University",
+    "contact_emails": [
+      "sticos@med.cornell.edu"
+    ]
   },
   {
     "nct_id": "NCT07314684",
@@ -1298,7 +1374,8 @@
         "lon": 14.26811
       }
     ],
-    "sponsor": "Federico II University"
+    "sponsor": "Federico II University",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT04303364",
@@ -1363,7 +1440,11 @@
         "lon": -1.55336
       }
     ],
-    "sponsor": "Institut National de la Santé Et de la Recherche Médicale, France"
+    "sponsor": "Institut National de la Santé Et de la Recherche Médicale, France",
+    "contact_emails": [
+      "genevieve.derumeaux@inserm.fr",
+      "anne.pizard@inserm.fr"
+    ]
   },
   {
     "nct_id": "NCT06735599",
@@ -1422,7 +1503,10 @@
         "lon": -84.38798
       }
     ],
-    "sponsor": "Georgia State University"
+    "sponsor": "Georgia State University",
+    "contact_emails": [
+      "berries@gsu.edu"
+    ]
   },
   {
     "nct_id": "NCT07484009",
@@ -1500,7 +1584,11 @@
         "lon": 2.15899
       }
     ],
-    "sponsor": "Fundacion para la Investigacion Biomedica del Hospital Universitario Ramon y Cajal"
+    "sponsor": "Fundacion para la Investigacion Biomedica del Hospital Universitario Ramon y Cajal",
+    "contact_emails": [
+      "jalvarezg82@gmail.com",
+      "creyi@salud.madrid.org"
+    ]
   },
   {
     "nct_id": "NCT06589063",
@@ -1538,7 +1626,11 @@
         "lon": 14.79328
       }
     ],
-    "sponsor": "University of Salerno"
+    "sponsor": "University of Salerno",
+    "contact_emails": [
+      "ggalasso@unisa.it",
+      "asilverio@unisa.it"
+    ]
   },
   {
     "nct_id": "NCT04832009",
@@ -1591,7 +1683,11 @@
         "lon": -94.62746
       }
     ],
-    "sponsor": "University of Kansas Medical Center"
+    "sponsor": "University of Kansas Medical Center",
+    "contact_emails": [
+      "sholwerda@kumc.edu",
+      "shoggirl@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT02084745",
@@ -1636,7 +1732,11 @@
         "lon": -73.58781
       }
     ],
-    "sponsor": "Centre hospitalier de l'Université de Montréal (CHUM)"
+    "sponsor": "Centre hospitalier de l'Université de Montréal (CHUM)",
+    "contact_emails": [
+      "monadagher@hotmail.com",
+      "dominique.geoffrion@mail.mcgill.ca"
+    ]
   },
   {
     "nct_id": "NCT06322056",
@@ -1690,7 +1790,10 @@
         "lon": 126.9784
       }
     ],
-    "sponsor": "Yonsei University"
+    "sponsor": "Yonsei University",
+    "contact_emails": [
+      "hansh@yuhs.ac"
+    ]
   },
   {
     "nct_id": "NCT06281366",
@@ -1723,7 +1826,8 @@
         "lon": 2.15899
       }
     ],
-    "sponsor": "Hospital Universitari Vall d'Hebron Research Institute"
+    "sponsor": "Hospital Universitari Vall d'Hebron Research Institute",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT05411029",
@@ -1767,7 +1871,10 @@
         "lon": -92.4699
       }
     ],
-    "sponsor": "Mayo Clinic"
+    "sponsor": "Mayo Clinic",
+    "contact_emails": [
+      "CPLSOMALI@mayo.edu"
+    ]
   },
   {
     "nct_id": "NCT06826872",
@@ -1821,7 +1928,10 @@
         "lon": 126.9784
       }
     ],
-    "sponsor": "Shin Poong Pharmaceutical Co. Ltd."
+    "sponsor": "Shin Poong Pharmaceutical Co. Ltd.",
+    "contact_emails": [
+      "yjjeong@shinpoong.co.kr"
+    ]
   },
   {
     "nct_id": "NCT07018557",
@@ -1866,7 +1976,10 @@
         "lon": -46.63611
       }
     ],
-    "sponsor": "University of Sao Paulo"
+    "sponsor": "University of Sao Paulo",
+    "contact_emails": [
+      "luciano.drager@incor.usp.br"
+    ]
   },
   {
     "nct_id": "NCT06429930",
@@ -1910,7 +2023,11 @@
         "lon": 172.63333
       }
     ],
-    "sponsor": "Pharmosa Biopharm Inc."
+    "sponsor": "Pharmosa Biopharm Inc.",
+    "contact_emails": [
+      "peikan@pharmosa.com.tw",
+      "sydney@pharmosa.com.tw"
+    ]
   },
   {
     "nct_id": "NCT07008365",
@@ -1961,7 +2078,8 @@
         "lon": -0.87734
       }
     ],
-    "sponsor": "Instituto de Investigación Sanitaria Aragón"
+    "sponsor": "Instituto de Investigación Sanitaria Aragón",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07175428",
@@ -2041,7 +2159,10 @@
         "lon": -118.14452
       }
     ],
-    "sponsor": "Regeneron Pharmaceuticals"
+    "sponsor": "Regeneron Pharmaceuticals",
+    "contact_emails": [
+      "clinicaltrials@regeneron.com"
+    ]
   },
   {
     "nct_id": "NCT06696079",
@@ -2118,7 +2239,11 @@
         "lon": 24.93545
       }
     ],
-    "sponsor": "Rahul Raj"
+    "sponsor": "Rahul Raj",
+    "contact_emails": [
+      "rahul.raj@hus.fi",
+      "jarno.satopaa@hus.fi"
+    ]
   },
   {
     "nct_id": "NCT07343895",
@@ -2170,7 +2295,11 @@
         "lon": 18.95508
       }
     ],
-    "sponsor": "University Hospital of North Norway"
+    "sponsor": "University Hospital of North Norway",
+    "contact_emails": [
+      "agnethe.eltoft@unn.no",
+      "emelia.e.gjesvik@uit.no"
+    ]
   },
   {
     "nct_id": "NCT07118046",
@@ -2210,7 +2339,10 @@
         "lon": -3.70256
       }
     ],
-    "sponsor": "Daniel Rodríguez Muñoz"
+    "sponsor": "Daniel Rodríguez Muñoz",
+    "contact_emails": [
+      "daniel.rodriguez.mnz@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT05009797",
@@ -2248,7 +2380,10 @@
         "lon": 3.05512
       }
     ],
-    "sponsor": "University Hospital, Lille"
+    "sponsor": "University Hospital, Lille",
+    "contact_emails": [
+      "sandro.ninni@chru-lille.fr"
+    ]
   },
   {
     "nct_id": "NCT04776759",
@@ -2282,7 +2417,10 @@
         "lon": -0.35912
       }
     ],
-    "sponsor": "University Hospital, Caen"
+    "sponsor": "University Hospital, Caen",
+    "contact_emails": [
+      "ollitrault-p@chu-caen.fr"
+    ]
   },
   {
     "nct_id": "NCT06308094",
@@ -2322,7 +2460,10 @@
         "lon": -76.61219
       }
     ],
-    "sponsor": "Johns Hopkins University"
+    "sponsor": "Johns Hopkins University",
+    "contact_emails": [
+      "karonis1@jhmi.edu"
+    ]
   },
   {
     "nct_id": "NCT05717725",
@@ -2366,7 +2507,8 @@
         "lon": 14.42076
       }
     ],
-    "sponsor": "Charles University, Czech Republic"
+    "sponsor": "Charles University, Czech Republic",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT05773768",
@@ -2406,7 +2548,8 @@
         "lon": 6.56667
       }
     ],
-    "sponsor": "University Medical Center Groningen"
+    "sponsor": "University Medical Center Groningen",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07273994",
@@ -2450,7 +2593,10 @@
         "lon": 2.15899
       }
     ],
-    "sponsor": "Fundació Institut de Recerca de l'Hospital de la Santa Creu i Sant Pau"
+    "sponsor": "Fundació Institut de Recerca de l'Hospital de la Santa Creu i Sant Pau",
+    "contact_emails": [
+      "jguerra@santpau.cat"
+    ]
   },
   {
     "nct_id": "NCT06723509",
@@ -2492,7 +2638,11 @@
         "lon": 6.16044
       }
     ],
-    "sponsor": "Centre Hospitalier Régional Metz-Thionville"
+    "sponsor": "Centre Hospitalier Régional Metz-Thionville",
+    "contact_emails": [
+      "projet-recherche-clinique@chr-metz-thionville.fr",
+      "celine.petitjean@chr-metz-thionville.fr"
+    ]
   },
   {
     "nct_id": "NCT05097898",
@@ -2549,7 +2699,11 @@
         "lon": 6.17114
       }
     ],
-    "sponsor": "Central Hospital, Nancy, France"
+    "sponsor": "Central Hospital, Nancy, France",
+    "contact_emails": [
+      "n.girerd@chru-nancy.fr",
+      "s.bouali@chru-nancy.fr"
+    ]
   },
   {
     "nct_id": "NCT05933083",
@@ -2630,7 +2784,10 @@
         "lon": -79.99589
       }
     ],
-    "sponsor": "University of California, San Francisco"
+    "sponsor": "University of California, San Francisco",
+    "contact_emails": [
+      "mcnairstudy@ucsf.edu"
+    ]
   },
   {
     "nct_id": "NCT07025629",
@@ -2682,7 +2839,11 @@
         "lon": 2.3488
       }
     ],
-    "sponsor": "Assistance Publique - Hôpitaux de Paris"
+    "sponsor": "Assistance Publique - Hôpitaux de Paris",
+    "contact_emails": [
+      "francois.depret@aphp.fr",
+      "alexandre.mebazaa@aphp.fr"
+    ]
   },
   {
     "nct_id": "NCT06597019",
@@ -2758,7 +2919,10 @@
         "lon": -80.0831
       }
     ],
-    "sponsor": "Novartis Pharmaceuticals"
+    "sponsor": "Novartis Pharmaceuticals",
+    "contact_emails": [
+      "novartis.email@novartis.com"
+    ]
   },
   {
     "nct_id": "NCT05596253",
@@ -2798,7 +2962,10 @@
         "lon": 104.06667
       }
     ],
-    "sponsor": "West China Hospital"
+    "sponsor": "West China Hospital",
+    "contact_emails": [
+      "luo_xuefeng@yeah.net"
+    ]
   },
   {
     "nct_id": "NCT07463014",
@@ -2838,7 +3005,11 @@
         "lon": 103.85007
       }
     ],
-    "sponsor": "Nanyang Technological University"
+    "sponsor": "Nanyang Technological University",
+    "contact_emails": [
+      "andyhyho@ntu.edu.sg",
+      "farrah.dewanti@ntu.edu.sg"
+    ]
   },
   {
     "nct_id": "NCT07228871",
@@ -2886,7 +3057,10 @@
         "lon": 32.85427
       }
     ],
-    "sponsor": "Ankara Etlik City Hospital"
+    "sponsor": "Ankara Etlik City Hospital",
+    "contact_emails": [
+      "kalemnaz@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT07132021",
@@ -2930,7 +3104,11 @@
         "lon": -34.88111
       }
     ],
-    "sponsor": "Universidade Federal de Pernambuco"
+    "sponsor": "Universidade Federal de Pernambuco",
+    "contact_emails": [
+      "gmelodaniel@gmail.com",
+      "gbarretoantonino@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06418698",
@@ -2971,7 +3149,11 @@
         "lon": 113.25
       }
     ],
-    "sponsor": "Zhujiang Hospital"
+    "sponsor": "Zhujiang Hospital",
+    "contact_emails": [
+      "13681134001@163.com",
+      "810107327@qq.com"
+    ]
   },
   {
     "nct_id": "NCT06986421",
@@ -3009,7 +3191,11 @@
         "lon": 6.12857
       }
     ],
-    "sponsor": "Hospices Civils de Lyon"
+    "sponsor": "Hospices Civils de Lyon",
+    "contact_emails": [
+      "david.plantier@chu-lyon.fr",
+      "victor-andrei.stan@drd.umfcd.ro"
+    ]
   },
   {
     "nct_id": "NCT04489199",
@@ -3047,7 +3233,10 @@
         "lon": 5.01391
       }
     ],
-    "sponsor": "Centre Hospitalier Universitaire Dijon"
+    "sponsor": "Centre Hospitalier Universitaire Dijon",
+    "contact_emails": [
+      "yannick.bejo@chu-dijon.fr"
+    ]
   },
   {
     "nct_id": "NCT06711003",
@@ -3091,7 +3280,10 @@
         "lon": 120.6839
       }
     ],
-    "sponsor": "China Medical University Hospital"
+    "sponsor": "China Medical University Hospital",
+    "contact_emails": [
+      "chouliwe@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06316557",
@@ -3136,7 +3328,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Zi-Xiao Li"
+    "sponsor": "Zi-Xiao Li",
+    "contact_emails": [
+      "jiawl1994@163.com"
+    ]
   },
   {
     "nct_id": "NCT03291392",
@@ -3176,7 +3371,10 @@
         "lon": 114.17469
       }
     ],
-    "sponsor": "Chinese University of Hong Kong"
+    "sponsor": "Chinese University of Hong Kong",
+    "contact_emails": [
+      "drtleung@cuhk.edu.hk"
+    ]
   },
   {
     "nct_id": "NCT02938611",
@@ -3233,7 +3431,10 @@
         "lon": 4.35788
       }
     ],
-    "sponsor": "Centre Hospitalier Universitaire de Nīmes"
+    "sponsor": "Centre Hospitalier Universitaire de Nīmes",
+    "contact_emails": [
+      "olivier.moranne@chu-nimes.fr"
+    ]
   },
   {
     "nct_id": "NCT02823821",
@@ -3309,7 +3510,11 @@
         "lon": 153.11913
       }
     ],
-    "sponsor": "University of Sydney"
+    "sponsor": "University of Sydney",
+    "contact_emails": [
+      "grace.balicki@sydney.edu.au",
+      "erika.dempsey@sydney.edu.au"
+    ]
   },
   {
     "nct_id": "NCT05071131",
@@ -3353,7 +3558,10 @@
         "lon": 13.41053
       }
     ],
-    "sponsor": "Charite University, Berlin, Germany"
+    "sponsor": "Charite University, Berlin, Germany",
+    "contact_emails": [
+      "victoria.mcparland@charite.de"
+    ]
   },
   {
     "nct_id": "NCT05339139",
@@ -3426,7 +3634,11 @@
         "lon": -83.74088
       }
     ],
-    "sponsor": "Fresenius Medical Care North America"
+    "sponsor": "Fresenius Medical Care North America",
+    "contact_emails": [
+      "anja.derlet@freseniusmedicalcare.com",
+      "manuela.stauss-grabo1@freseniusmedicalcare.com"
+    ]
   },
   {
     "nct_id": "NCT07134595",
@@ -3470,7 +3682,11 @@
         "lon": 120.9822
       }
     ],
-    "sponsor": "National University Health System, Singapore"
+    "sponsor": "National University Health System, Singapore",
+    "contact_emails": [
+      "sharon_teo@nuhs.edu.sg",
+      "than_mya@nuhs.edu.sg"
+    ]
   },
   {
     "nct_id": "NCT07237295",
@@ -3510,7 +3726,10 @@
         "lon": -77.77387
       }
     ],
-    "sponsor": "University of North Carolina, Chapel Hill"
+    "sponsor": "University of North Carolina, Chapel Hill",
+    "contact_emails": [
+      "CRx-K@med.unc.edu"
+    ]
   },
   {
     "nct_id": "NCT01016613",
@@ -3576,7 +3795,11 @@
         "lon": -75.16362
       }
     ],
-    "sponsor": "University of Michigan"
+    "sponsor": "University of Michigan",
+    "contact_emails": [
+      "boridley@med.umich.edu",
+      "markusbi@med.umich.edu"
+    ]
   },
   {
     "nct_id": "NCT06886282",
@@ -3609,7 +3832,10 @@
         "lon": 14.26811
       }
     ],
-    "sponsor": "National Cancer Institute, Naples"
+    "sponsor": "National Cancer Institute, Naples",
+    "contact_emails": [
+      "a.petrillo@istitutotumori.na.it"
+    ]
   },
   {
     "nct_id": "NCT04195633",
@@ -3723,7 +3949,10 @@
         "lon": -122.33207
       }
     ],
-    "sponsor": "Fred Hutchinson Cancer Center"
+    "sponsor": "Fred Hutchinson Cancer Center",
+    "contact_emails": [
+      "fmilano@fredhutch.org"
+    ]
   },
   {
     "nct_id": "NCT03736863",
@@ -3771,7 +4000,10 @@
         "lon": 113.64861
       }
     ],
-    "sponsor": "The First Affiliated Hospital of Zhengzhou University"
+    "sponsor": "The First Affiliated Hospital of Zhengzhou University",
+    "contact_emails": [
+      "fengw010@163.com"
+    ]
   },
   {
     "nct_id": "NCT06249321",
@@ -3812,7 +4044,10 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Fudan University"
+    "sponsor": "Fudan University",
+    "contact_emails": [
+      "yangying@fudanpci.org"
+    ]
   },
   {
     "nct_id": "NCT07438106",
@@ -3852,7 +4087,10 @@
         "lon": 118.77778
       }
     ],
-    "sponsor": "The First Affiliated Hospital with Nanjing Medical University"
+    "sponsor": "The First Affiliated Hospital with Nanjing Medical University",
+    "contact_emails": [
+      "Jiangkuirong@163.com"
+    ]
   },
   {
     "nct_id": "NCT06558604",
@@ -3936,7 +4174,10 @@
         "lon": 2.46569
       }
     ],
-    "sponsor": "The Lymphoma Academic Research Organisation"
+    "sponsor": "The Lymphoma Academic Research Organisation",
+    "contact_emails": [
+      "julie.assemat@lysarc.org"
+    ]
   },
   {
     "nct_id": "NCT06298084",
@@ -3984,7 +4225,11 @@
         "lon": 2.35992
       }
     ],
-    "sponsor": "Gustave Roussy, Cancer Campus, Grand Paris"
+    "sponsor": "Gustave Roussy, Cancer Campus, Grand Paris",
+    "contact_emails": [
+      "barbara.pistilli@gustaveroussy.fr",
+      "Mariafernanda.MOSELE@gustaveroussy.fr"
+    ]
   },
   {
     "nct_id": "NCT06291064",
@@ -4068,7 +4313,10 @@
         "lon": 3.90591
       }
     ],
-    "sponsor": "University of Chicago"
+    "sponsor": "University of Chicago",
+    "contact_emails": [
+      "isiljander1@bsd.uchicago.edu"
+    ]
   },
   {
     "nct_id": "NCT04965064",
@@ -4108,7 +4356,10 @@
         "lon": -77.61556
       }
     ],
-    "sponsor": "University of Rochester"
+    "sponsor": "University of Rochester",
+    "contact_emails": [
+      "WCICTOResearch@URMC.Rochester.edu"
+    ]
   },
   {
     "nct_id": "NCT07214298",
@@ -4182,7 +4433,10 @@
         "lon": -78.87837
       }
     ],
-    "sponsor": "Roswell Park Cancer Institute"
+    "sponsor": "Roswell Park Cancer Institute",
+    "contact_emails": [
+      "Sarah.Chatley@roswellpark.org"
+    ]
   },
   {
     "nct_id": "NCT05774899",
@@ -4233,7 +4487,10 @@
         "lon": -71.05977
       }
     ],
-    "sponsor": "Glenn J. Hanna"
+    "sponsor": "Glenn J. Hanna",
+    "contact_emails": [
+      "Gjhanna@partners.org"
+    ]
   },
   {
     "nct_id": "NCT02535221",
@@ -4277,7 +4534,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Peking University"
+    "sponsor": "Peking University",
+    "contact_emails": [
+      "ouyanghongtao@263.net"
+    ]
   },
   {
     "nct_id": "NCT06313086",
@@ -4321,7 +4581,10 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "CSPC ZhongQi Pharmaceutical Technology Co., Ltd."
+    "sponsor": "CSPC ZhongQi Pharmaceutical Technology Co., Ltd.",
+    "contact_emails": [
+      "ctr-contact@cspc.cn"
+    ]
   },
   {
     "nct_id": "NCT04715958",
@@ -4387,7 +4650,10 @@
         "lon": -96.80667
       }
     ],
-    "sponsor": "Kibo Nam"
+    "sponsor": "Kibo Nam",
+    "contact_emails": [
+      "Kibo.Nam@jefferson.edu"
+    ]
   },
   {
     "nct_id": "NCT06044623",
@@ -4467,7 +4733,10 @@
         "lon": 21.73508
       }
     ],
-    "sponsor": "Region Örebro County"
+    "sponsor": "Region Örebro County",
+    "contact_emails": [
+      "important@oru.se"
+    ]
   },
   {
     "nct_id": "NCT07024173",
@@ -4536,7 +4805,10 @@
         "lon": 112.97087
       }
     ],
-    "sponsor": "Shandong Suncadia Medicine Co., Ltd."
+    "sponsor": "Shandong Suncadia Medicine Co., Ltd.",
+    "contact_emails": [
+      "min.li.ml150@hengrui.com"
+    ]
   },
   {
     "nct_id": "NCT05894239",
@@ -4624,7 +4896,10 @@
         "lon": -117.82311
       }
     ],
-    "sponsor": "Hoffmann-La Roche"
+    "sponsor": "Hoffmann-La Roche",
+    "contact_emails": [
+      "global-roche-genentech-trials@gene.com"
+    ]
   },
   {
     "nct_id": "NCT06143553",
@@ -4700,7 +4975,10 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Shanghai Yizhong Pharmaceutical Co., Ltd."
+    "sponsor": "Shanghai Yizhong Pharmaceutical Co., Ltd.",
+    "contact_emails": [
+      "15601735965@163.com"
+    ]
   },
   {
     "nct_id": "NCT07057427",
@@ -4748,7 +5026,10 @@
         "lon": 113.64861
       }
     ],
-    "sponsor": "Henan Cancer Hospital"
+    "sponsor": "Henan Cancer Hospital",
+    "contact_emails": [
+      "zlyyliuzhenzhen0800@zzu.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT06081244",
@@ -4824,7 +5105,11 @@
         "lon": 9.05222
       }
     ],
-    "sponsor": "West German Study Group"
+    "sponsor": "West German Study Group",
+    "contact_emails": [
+      "oleg.gluz@wsg-online.com",
+      "anja.braschoss@wsg-online.com"
+    ]
   },
   {
     "nct_id": "NCT05856773",
@@ -4896,7 +5181,8 @@
         "lon": -84.38798
       }
     ],
-    "sponsor": "Proton Collaborative Group"
+    "sponsor": "Proton Collaborative Group",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06840834",
@@ -4968,7 +5254,10 @@
         "lon": 2.46569
       }
     ],
-    "sponsor": "Intergroupe Francophone de Cancerologie Thoracique"
+    "sponsor": "Intergroupe Francophone de Cancerologie Thoracique",
+    "contact_emails": [
+      "contact@ifct.fr"
+    ]
   },
   {
     "nct_id": "NCT07122687",
@@ -5024,7 +5313,10 @@
         "lon": 123.43278
       }
     ],
-    "sponsor": "Innovent Biologics (Suzhou) Co. Ltd."
+    "sponsor": "Innovent Biologics (Suzhou) Co. Ltd.",
+    "contact_emails": [
+      "wei.zhang02@innoventbio.com"
+    ]
   },
   {
     "nct_id": "NCT06755684",
@@ -5075,7 +5367,11 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Peng Zhang"
+    "sponsor": "Peng Zhang",
+    "contact_emails": [
+      "zhangpeng1121@tongji.edu.cn",
+      "18831402353@163.com"
+    ]
   },
   {
     "nct_id": "NCT05657873",
@@ -5159,7 +5455,11 @@
         "lon": -73.29289
       }
     ],
-    "sponsor": "Memorial Sloan Kettering Cancer Center"
+    "sponsor": "Memorial Sloan Kettering Cancer Center",
+    "contact_emails": [
+      "romessep@mskcc.org",
+      "gomezd@mskcc.org"
+    ]
   },
   {
     "nct_id": "NCT05849129",
@@ -5203,7 +5503,11 @@
         "lon": -75.69812
       }
     ],
-    "sponsor": "The Canadian College of Naturopathic Medicine"
+    "sponsor": "The Canadian College of Naturopathic Medicine",
+    "contact_emails": [
+      "dseely@thechi.ca",
+      "mlegacy@thechi.ca"
+    ]
   },
   {
     "nct_id": "NCT06667167",
@@ -5243,7 +5547,11 @@
         "lon": 35.21633
       }
     ],
-    "sponsor": "Nir Peled"
+    "sponsor": "Nir Peled",
+    "contact_emails": [
+      "nirp@szmc.org.il",
+      "einat.l@szmc.org.il"
+    ]
   },
   {
     "nct_id": "NCT06739928",
@@ -5287,7 +5595,10 @@
         "lon": 113.25
       }
     ],
-    "sponsor": "Guangzhou Institute of Respiratory Disease"
+    "sponsor": "Guangzhou Institute of Respiratory Disease",
+    "contact_emails": [
+      "doctorzcz@163.com"
+    ]
   },
   {
     "nct_id": "NCT07058519",
@@ -5331,7 +5642,10 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Shanghai Chest Hospital"
+    "sponsor": "Shanghai Chest Hospital",
+    "contact_emails": [
+      "shunlu@sjtu.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT05334277",
@@ -5415,7 +5729,11 @@
         "lon": 113.13148
       }
     ],
-    "sponsor": "Sun Yat-sen University"
+    "sponsor": "Sun Yat-sen University",
+    "contact_emails": [
+      "zhangli@sysucc.org.cn",
+      "fangwf@sysucc.org.cn"
+    ]
   },
   {
     "nct_id": "NCT05004974",
@@ -5459,7 +5777,8 @@
         "lon": 120.07676
       }
     ],
-    "sponsor": "The Fourth Affiliated Hospital of Zhejiang University School of Medicine"
+    "sponsor": "The Fourth Affiliated Hospital of Zhejiang University School of Medicine",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06418204",
@@ -5533,7 +5852,10 @@
         "lon": -90.70428
       }
     ],
-    "sponsor": "Wake Forest University Health Sciences"
+    "sponsor": "Wake Forest University Health Sciences",
+    "contact_emails": [
+      "NCORP@wfusm.edu"
+    ]
   },
   {
     "nct_id": "NCT07307664",
@@ -5608,7 +5930,11 @@
         "lon": -86.15804
       }
     ],
-    "sponsor": "Josh Peterson"
+    "sponsor": "Josh Peterson",
+    "contact_emails": [
+      "megan.he@vumc.org",
+      "lynn.a.seabolt@vumc.org"
+    ]
   },
   {
     "nct_id": "NCT07158164",
@@ -5687,7 +6013,11 @@
         "lon": -74.31487
       }
     ],
-    "sponsor": "Rutgers, The State University of New Jersey"
+    "sponsor": "Rutgers, The State University of New Jersey",
+    "contact_emails": [
+      "howard.hochster@rutgers.edu",
+      "cm1344@cinj.rutgers.edu"
+    ]
   },
   {
     "nct_id": "NCT05710809",
@@ -5756,7 +6086,11 @@
         "lon": 12.43998
       }
     ],
-    "sponsor": "Rigshospitalet, Denmark"
+    "sponsor": "Rigshospitalet, Denmark",
+    "contact_emails": [
+      "katrine.storm.piper@regionh.dk",
+      "jan.christensen.02@regionh.dk"
+    ]
   },
   {
     "nct_id": "NCT05787587",
@@ -5840,7 +6174,10 @@
         "lon": -104.9847
       }
     ],
-    "sponsor": "IDEAYA Biosciences"
+    "sponsor": "IDEAYA Biosciences",
+    "contact_emails": [
+      "IDEAYAClinicalTrials@ideayabio.com"
+    ]
   },
   {
     "nct_id": "NCT07071714",
@@ -5888,7 +6225,10 @@
         "lon": 113.25
       }
     ],
-    "sponsor": "Suzhou Suncadia Biopharmaceuticals Co., Ltd."
+    "sponsor": "Suzhou Suncadia Biopharmaceuticals Co., Ltd.",
+    "contact_emails": [
+      "chuanpei.huang@hengrui.com"
+    ]
   },
   {
     "nct_id": "NCT05993923",
@@ -5953,7 +6293,10 @@
         "lon": 4.35788
       }
     ],
-    "sponsor": "Centre Hospitalier Universitaire de Nīmes"
+    "sponsor": "Centre Hospitalier Universitaire de Nīmes",
+    "contact_emails": [
+      "coralie.labarias@chu-nimes.fr"
+    ]
   },
   {
     "nct_id": "NCT07224841",
@@ -5995,7 +6338,10 @@
         "lon": -117.97729
       }
     ],
-    "sponsor": "City of Hope Medical Center"
+    "sponsor": "City of Hope Medical Center",
+    "contact_emails": [
+      "ajgoel@coh.org"
+    ]
   },
   {
     "nct_id": "NCT05771181",
@@ -6044,7 +6390,11 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Fudan University"
+    "sponsor": "Fudan University",
+    "contact_emails": [
+      "li_dawei@fudan.edu.cn",
+      "chanhj@aliyun.com"
+    ]
   },
   {
     "nct_id": "NCT06640166",
@@ -6109,7 +6459,11 @@
         "lon": 18.35421
       }
     ],
-    "sponsor": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS"
+    "sponsor": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS",
+    "contact_emails": [
+      "mariaalessandra.calegari@policlinicogemelli.it",
+      "eclypsestudy@policlinicogemelli.it"
+    ]
   },
   {
     "nct_id": "NCT05190471",
@@ -6178,7 +6532,10 @@
         "lon": -95.36327
       }
     ],
-    "sponsor": "Bio-Path Holdings, Inc."
+    "sponsor": "Bio-Path Holdings, Inc.",
+    "contact_emails": [
+      "mhickey@biopathholdings.com"
+    ]
   },
   {
     "nct_id": "NCT05281809",
@@ -6226,7 +6583,10 @@
         "lon": -79.99589
       }
     ],
-    "sponsor": "John Lister"
+    "sponsor": "John Lister",
+    "contact_emails": [
+      "john.lister@ahn.org"
+    ]
   },
   {
     "nct_id": "NCT05501899",
@@ -6275,7 +6635,10 @@
         "lon": -117.85311
       }
     ],
-    "sponsor": "Children's Hospital of Orange County"
+    "sponsor": "Children's Hospital of Orange County",
+    "contact_emails": [
+      "vahuynh@choc.org"
+    ]
   },
   {
     "nct_id": "NCT06684964",
@@ -6337,7 +6700,10 @@
         "lon": 46.72185
       }
     ],
-    "sponsor": "Novartis Pharmaceuticals"
+    "sponsor": "Novartis Pharmaceuticals",
+    "contact_emails": [
+      "novartis.email@novartis.com"
+    ]
   },
   {
     "nct_id": "NCT01746836",
@@ -6387,7 +6753,10 @@
         "lon": -95.36327
       }
     ],
-    "sponsor": "M.D. Anderson Cancer Center"
+    "sponsor": "M.D. Anderson Cancer Center",
+    "contact_emails": [
+      "ejabbour@mdanderson.org"
+    ]
   },
   {
     "nct_id": "NCT05006716",
@@ -6468,7 +6837,10 @@
         "lon": -117.2742
       }
     ],
-    "sponsor": "BeOne Medicines"
+    "sponsor": "BeOne Medicines",
+    "contact_emails": [
+      "clinicaltrials@beonemed.com"
+    ]
   },
   {
     "nct_id": "NCT04168502",
@@ -6540,7 +6912,11 @@
         "lon": 16.86982
       }
     ],
-    "sponsor": "Gruppo Italiano Malattie EMatologiche dell'Adulto"
+    "sponsor": "Gruppo Italiano Malattie EMatologiche dell'Adulto",
+    "contact_emails": [
+      "p.fazi@gimema.it",
+      "e.crea@gimema.it"
+    ]
   },
   {
     "nct_id": "NCT06307600",
@@ -6588,7 +6964,10 @@
         "lon": 114.26667
       }
     ],
-    "sponsor": "Anhui Provincial Hospital"
+    "sponsor": "Anhui Provincial Hospital",
+    "contact_emails": [
+      "xiaoyuz@ustc.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT03128879",
@@ -6636,7 +7015,10 @@
         "lon": -95.36327
       }
     ],
-    "sponsor": "M.D. Anderson Cancer Center"
+    "sponsor": "M.D. Anderson Cancer Center",
+    "contact_emails": [
+      "aferrajo@mdanderson.org"
+    ]
   },
   {
     "nct_id": "NCT06928298",
@@ -6694,7 +7076,11 @@
         "lon": -98.49363
       }
     ],
-    "sponsor": "University of Texas at Austin"
+    "sponsor": "University of Texas at Austin",
+    "contact_emails": [
+      "hilsabeck@uthscsa.edu",
+      "joshua.chang@austin.utexas.edu"
+    ]
   },
   {
     "nct_id": "NCT06699771",
@@ -6758,7 +7144,11 @@
         "lon": 126.9784
       }
     ],
-    "sponsor": "GC Cell Corporation"
+    "sponsor": "GC Cell Corporation",
+    "contact_emails": [
+      "hs_jeon@gccorp.com",
+      "hansr@gccorp.com"
+    ]
   },
   {
     "nct_id": "NCT06137144",
@@ -6833,7 +7223,10 @@
         "lon": -95.36327
       }
     ],
-    "sponsor": "AstraZeneca"
+    "sponsor": "AstraZeneca",
+    "contact_emails": [
+      "information.center@astrazeneca.com"
+    ]
   },
   {
     "nct_id": "NCT07489599",
@@ -6929,7 +7322,10 @@
       "healthy_volunteers": true
     },
     "locations": [],
-    "sponsor": "Qilu Pharmaceutical Co., Ltd."
+    "sponsor": "Qilu Pharmaceutical Co., Ltd.",
+    "contact_emails": [
+      "fangyi.wang@qilu-pharma.com"
+    ]
   },
   {
     "nct_id": "NCT06523309",
@@ -7000,7 +7396,11 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Guang'anmen Hospital of China Academy of Chinese Medical Sciences"
+    "sponsor": "Guang'anmen Hospital of China Academy of Chinese Medical Sciences",
+    "contact_emails": [
+      "jiabaohui2504@gamyy.cn",
+      "lcgxliran@163.com"
+    ]
   },
   {
     "nct_id": "NCT06840054",
@@ -7035,7 +7435,10 @@
       "healthy_volunteers": false
     },
     "locations": [],
-    "sponsor": "Tabriz University of Medical Sciences"
+    "sponsor": "Tabriz University of Medical Sciences",
+    "contact_emails": [
+      "saeidsafiri@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT07191028",
@@ -7079,7 +7482,11 @@
         "lon": 103.85007
       }
     ],
-    "sponsor": "Moleac Pte Ltd."
+    "sponsor": "Moleac Pte Ltd.",
+    "contact_emails": [
+      "mea.sung@moleac.com",
+      "peakyuen.lee@moleac.com"
+    ]
   },
   {
     "nct_id": "NCT06993285",
@@ -7119,7 +7526,11 @@
         "lon": 6.17114
       }
     ],
-    "sponsor": "Central Hospital, Nancy, France"
+    "sponsor": "Central Hospital, Nancy, France",
+    "contact_emails": [
+      "l.joly@chru-nancy.fr",
+      "clotilde.caillet@orange.fr"
+    ]
   },
   {
     "nct_id": "NCT06991816",
@@ -7154,7 +7565,8 @@
         "lon": 14.26811
       }
     ],
-    "sponsor": "University of Campania Luigi Vanvitelli"
+    "sponsor": "University of Campania Luigi Vanvitelli",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07388186",
@@ -7200,7 +7612,10 @@
         "lon": -5.66388
       }
     ],
-    "sponsor": "University of Salamanca"
+    "sponsor": "University of Salamanca",
+    "contact_emails": [
+      "andreacallejac@usal.es"
+    ]
   },
   {
     "nct_id": "NCT07425769",
@@ -7245,7 +7660,11 @@
         "lon": -94.62746
       }
     ],
-    "sponsor": "University of Kansas Medical Center"
+    "sponsor": "University of Kansas Medical Center",
+    "contact_emails": [
+      "abodde@kumc.edu",
+      "jsherman7@kumc.edu"
+    ]
   },
   {
     "nct_id": "NCT06902753",
@@ -7281,7 +7700,10 @@
       "healthy_volunteers": true
     },
     "locations": [],
-    "sponsor": "Poitiers University Hospital"
+    "sponsor": "Poitiers University Hospital",
+    "contact_emails": [
+      "pierre-alexandre.berard@chu-poitiers.fr"
+    ]
   },
   {
     "nct_id": "NCT06947941",
@@ -7321,7 +7743,10 @@
       "healthy_volunteers": false
     },
     "locations": [],
-    "sponsor": "Bristol-Myers Squibb"
+    "sponsor": "Bristol-Myers Squibb",
+    "contact_emails": [
+      "Clinical.Trials@bms.com"
+    ]
   },
   {
     "nct_id": "NCT05550714",
@@ -7368,7 +7793,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Beijing Tiantan Hospital"
+    "sponsor": "Beijing Tiantan Hospital",
+    "contact_emails": [
+      "ruquan.han@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06385184",
@@ -7406,7 +7834,10 @@
         "lon": -77.03637
       }
     ],
-    "sponsor": "Gregory Wallace"
+    "sponsor": "Gregory Wallace",
+    "contact_emails": [
+      "ladn@gwu.edu"
+    ]
   },
   {
     "nct_id": "NCT05884944",
@@ -7451,7 +7882,10 @@
         "lon": -73.59957
       }
     ],
-    "sponsor": "New York Institute of Technology"
+    "sponsor": "New York Institute of Technology",
+    "contact_emails": [
+      "syao@nyit.edu"
+    ]
   },
   {
     "nct_id": "NCT06487364",
@@ -7489,7 +7923,10 @@
         "lon": 28.94966
       }
     ],
-    "sponsor": "Emre Şenocak"
+    "sponsor": "Emre Şenocak",
+    "contact_emails": [
+      "emre.senocak@windowslive.com"
+    ]
   },
   {
     "nct_id": "NCT05400499",
@@ -7522,7 +7959,11 @@
         "lon": -81.69541
       }
     ],
-    "sponsor": "VA Office of Research and Development"
+    "sponsor": "VA Office of Research and Development",
+    "contact_emails": [
+      "Aasef.Shaikh@va.gov",
+      "Monica.O'Loughlin@va.gov"
+    ]
   },
   {
     "nct_id": "NCT06116084",
@@ -7569,7 +8010,11 @@
         "lon": 6.17114
       }
     ],
-    "sponsor": "Central Hospital, Nancy, France"
+    "sponsor": "Central Hospital, Nancy, France",
+    "contact_emails": [
+      "a.hue@chru-nancy.fr",
+      "v.roch@chru-nancy.fr"
+    ]
   },
   {
     "nct_id": "NCT04804202",
@@ -7617,7 +8062,11 @@
         "lon": -73.59957
       }
     ],
-    "sponsor": "Rutgers, The State University of New Jersey"
+    "sponsor": "Rutgers, The State University of New Jersey",
+    "contact_emails": [
+      "deutsch@rutgers.edu",
+      "mcfarlsb@research.rutgers.edu"
+    ]
   },
   {
     "nct_id": "NCT06508801",
@@ -7661,7 +8110,11 @@
         "lon": -98.49363
       }
     ],
-    "sponsor": "The University of Texas Health Science Center at San Antonio"
+    "sponsor": "The University of Texas Health Science Center at San Antonio",
+    "contact_emails": [
+      "sivaramakris@uthscsa.edu",
+      "baezaa1@uthscsa.edu"
+    ]
   },
   {
     "nct_id": "NCT05198076",
@@ -7701,7 +8154,11 @@
         "lon": 31.20861
       }
     ],
-    "sponsor": "Cairo University"
+    "sponsor": "Cairo University",
+    "contact_emails": [
+      "engybm.saleh@cu.edu.eg",
+      "engybm.saleh@yahoo.com"
+    ]
   },
   {
     "nct_id": "NCT06481540",
@@ -7747,7 +8204,10 @@
         "lon": 14.42076
       }
     ],
-    "sponsor": "General University Hospital, Prague"
+    "sponsor": "General University Hospital, Prague",
+    "contact_emails": [
+      "martin.srp@vfn.cz"
+    ]
   },
   {
     "nct_id": "NCT06901687",
@@ -7792,7 +8252,10 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "NYU Langone Health"
+    "sponsor": "NYU Langone Health",
+    "contact_emails": [
+      "Shayna.Pehel@nyulangone.org"
+    ]
   },
   {
     "nct_id": "NCT06617793",
@@ -7865,7 +8328,10 @@
         "lon": -1.67431
       }
     ],
-    "sponsor": "Novartis Pharmaceuticals"
+    "sponsor": "Novartis Pharmaceuticals",
+    "contact_emails": [
+      "novartis.email@novartis.com"
+    ]
   },
   {
     "nct_id": "NCT06957145",
@@ -7906,7 +8372,8 @@
         "lon": 28.94966
       }
     ],
-    "sponsor": "Koç University"
+    "sponsor": "Koç University",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT05644522",
@@ -7951,7 +8418,10 @@
         "lon": -87.65005
       }
     ],
-    "sponsor": "Shirley Ryan AbilityLab"
+    "sponsor": "Shirley Ryan AbilityLab",
+    "contact_emails": [
+      "ajayaraman@sralab.org"
+    ]
   },
   {
     "nct_id": "NCT07033975",
@@ -7991,7 +8461,10 @@
         "lon": 5.41875
       }
     ],
-    "sponsor": "Jerome J. A. Hendriks"
+    "sponsor": "Jerome J. A. Hendriks",
+    "contact_emails": [
+      "jerome.hendriks@uhasselt.be"
+    ]
   },
   {
     "nct_id": "NCT06951919",
@@ -8035,7 +8508,11 @@
         "lon": -72.25176
       }
     ],
-    "sponsor": "Dartmouth-Hitchcock Medical Center"
+    "sponsor": "Dartmouth-Hitchcock Medical Center",
+    "contact_emails": [
+      "HOBSCOTCH-MS.Research@Hitchcock.org",
+      "HOBSCOTCH-MS.Research@Hitchcock.org"
+    ]
   },
   {
     "nct_id": "NCT05934188",
@@ -8112,7 +8589,10 @@
         "lon": 12.33265
       }
     ],
-    "sponsor": "IRCCS San Camillo, Venezia, Italy"
+    "sponsor": "IRCCS San Camillo, Venezia, Italy",
+    "contact_emails": [
+      "nicola.filippini@hsancamillo.it"
+    ]
   },
   {
     "nct_id": "NCT07058870",
@@ -8152,7 +8632,10 @@
         "lon": 11.62057
       }
     ],
-    "sponsor": "University Hospital of Ferrara"
+    "sponsor": "University Hospital of Ferrara",
+    "contact_emails": [
+      "sofia.straudi@unife.it"
+    ]
   },
   {
     "nct_id": "NCT06463743",
@@ -8196,7 +8679,10 @@
         "lon": -78.87837
       }
     ],
-    "sponsor": "State University of New York at Buffalo"
+    "sponsor": "State University of New York at Buffalo",
+    "contact_emails": [
+      "kpatrick@buffalo.edu"
+    ]
   },
   {
     "nct_id": "NCT07137624",
@@ -8240,7 +8726,10 @@
         "lon": 32.85427
       }
     ],
-    "sponsor": "Hacettepe University"
+    "sponsor": "Hacettepe University",
+    "contact_emails": [
+      "merveunal.144@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT07064421",
@@ -8282,7 +8771,10 @@
         "lon": 113.25
       }
     ],
-    "sponsor": "Guangzhou Women and Children's Medical Center"
+    "sponsor": "Guangzhou Women and Children's Medical Center",
+    "contact_emails": [
+      "15625984282@163.com"
+    ]
   },
   {
     "nct_id": "NCT05096273",
@@ -8322,7 +8814,10 @@
         "lon": -86.80249
       }
     ],
-    "sponsor": "University of Alabama at Birmingham"
+    "sponsor": "University of Alabama at Birmingham",
+    "contact_emails": [
+      "afobian@uabmc.edu"
+    ]
   },
   {
     "nct_id": "NCT05307146",
@@ -8362,7 +8857,10 @@
         "lon": 4.70093
       }
     ],
-    "sponsor": "Universitaire Ziekenhuizen KU Leuven"
+    "sponsor": "Universitaire Ziekenhuizen KU Leuven",
+    "contact_emails": [
+      "anais.vanhoylandt@uzleuven.be"
+    ]
   },
   {
     "nct_id": "NCT04802135",
@@ -8432,7 +8930,10 @@
         "lon": 1.24759
       }
     ],
-    "sponsor": "Assistance Publique Hopitaux De Marseille"
+    "sponsor": "Assistance Publique Hopitaux De Marseille",
+    "contact_emails": [
+      "mathieu.milh@ap-hm.fr"
+    ]
   },
   {
     "nct_id": "NCT06262594",
@@ -8485,7 +8986,10 @@
         "lon": -97.14704
       }
     ],
-    "sponsor": "University of Manitoba"
+    "sponsor": "University of Manitoba",
+    "contact_emails": [
+      "letoile@umanitoba.ca"
+    ]
   },
   {
     "nct_id": "NCT00060541",
@@ -8527,7 +9031,10 @@
         "lon": -77.10026
       }
     ],
-    "sponsor": "National Institute of Neurological Disorders and Stroke (NINDS)"
+    "sponsor": "National Institute of Neurological Disorders and Stroke (NINDS)",
+    "contact_emails": [
+      "snbrecruiting@nih.gov"
+    ]
   },
   {
     "nct_id": "NCT04677751",
@@ -8567,7 +9074,11 @@
         "lon": -95.36327
       }
     ],
-    "sponsor": "The University of Texas Health Science Center, Houston"
+    "sponsor": "The University of Texas Health Science Center, Houston",
+    "contact_emails": [
+      "Olga.Rodziyevska@uth.tmc.edu",
+      "Ardonia.N.Tousant@uth.tmc.edu"
+    ]
   },
   {
     "nct_id": "NCT06976788",
@@ -8609,7 +9120,10 @@
         "lon": 5.38107
       }
     ],
-    "sponsor": "Assistance Publique Hopitaux De Marseille"
+    "sponsor": "Assistance Publique Hopitaux De Marseille",
+    "contact_emails": [
+      "eric.guedj@ap-hm.fr"
+    ]
   },
   {
     "nct_id": "NCT05885646",
@@ -8664,7 +9178,10 @@
         "lon": 1.44367
       }
     ],
-    "sponsor": "University Hospital, Angers"
+    "sponsor": "University Hospital, Angers",
+    "contact_emails": [
+      "Patrick.VanBogaert@chu-angers.fr"
+    ]
   },
   {
     "nct_id": "NCT04717388",
@@ -8717,7 +9234,11 @@
         "lon": 2.3488
       }
     ],
-    "sponsor": "Assistance Publique - Hôpitaux de Paris"
+    "sponsor": "Assistance Publique - Hôpitaux de Paris",
+    "contact_emails": [
+      "sophie.dupont@aphp.fr",
+      "severine.samson@univ-lille.fr"
+    ]
   },
   {
     "nct_id": "NCT05800509",
@@ -8763,7 +9284,10 @@
         "lon": 121.52639
       }
     ],
-    "sponsor": "National Taiwan University Hospital"
+    "sponsor": "National Taiwan University Hospital",
+    "contact_emails": [
+      "hunghuichen@ntu.edu.tw"
+    ]
   },
   {
     "nct_id": "NCT05809609",
@@ -8809,7 +9333,10 @@
         "lon": -1.25596
       }
     ],
-    "sponsor": "University of Oxford"
+    "sponsor": "University of Oxford",
+    "contact_emails": [
+      "sara.costi@psych.ox.ac.uk"
+    ]
   },
   {
     "nct_id": "NCT06668571",
@@ -8854,7 +9381,10 @@
         "lon": -92.4699
       }
     ],
-    "sponsor": "Mayo Clinic"
+    "sponsor": "Mayo Clinic",
+    "contact_emails": [
+      "reinicke.nicole@mayo.edu"
+    ]
   },
   {
     "nct_id": "NCT07135232",
@@ -8903,7 +9433,11 @@
         "lon": -1.54785
       }
     ],
-    "sponsor": "Leeds Beckett University"
+    "sponsor": "Leeds Beckett University",
+    "contact_emails": [
+      "H.cannell@leedsbeckett.ac.uk",
+      "T.Ispoglou@leedsbeckett.ac.uk"
+    ]
   },
   {
     "nct_id": "NCT07063914",
@@ -8943,7 +9477,11 @@
         "lon": -70.64827
       }
     ],
-    "sponsor": "Universidad de los Andes, Chile"
+    "sponsor": "Universidad de los Andes, Chile",
+    "contact_emails": [
+      "jgaete@uandes.cl",
+      "saramirez1@miuandes.cl"
+    ]
   },
   {
     "nct_id": "NCT06817993",
@@ -8983,7 +9521,11 @@
         "lon": -79.99589
       }
     ],
-    "sponsor": "University of Pittsburgh"
+    "sponsor": "University of Pittsburgh",
+    "contact_emails": [
+      "jss4@pitt.edu",
+      "SEN102@pitt.edu"
+    ]
   },
   {
     "nct_id": "NCT07120893",
@@ -9023,7 +9565,8 @@
         "lon": 110.35556
       }
     ],
-    "sponsor": "Gadjah Mada University"
+    "sponsor": "Gadjah Mada University",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07478393",
@@ -9068,7 +9611,11 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "Teachers College, Columbia University"
+    "sponsor": "Teachers College, Columbia University",
+    "contact_emails": [
+      "mennin@tc.columbia.edu",
+      "emotionregulationtherapy@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06529029",
@@ -9112,7 +9659,11 @@
         "lon": -85.66809
       }
     ],
-    "sponsor": "Michigan State University"
+    "sponsor": "Michigan State University",
+    "contact_emails": [
+      "nagy.youssef@pinerest.org",
+      "janelle.kassien@pinerest.org"
+    ]
   },
   {
     "nct_id": "NCT05945602",
@@ -9150,7 +9701,10 @@
         "lon": -117.16472
       }
     ],
-    "sponsor": "VA Office of Research and Development"
+    "sponsor": "VA Office of Research and Development",
+    "contact_emails": [
+      "Juan.Molina@va.gov"
+    ]
   },
   {
     "nct_id": "NCT06048172",
@@ -9192,7 +9746,11 @@
         "lon": 9.99302
       }
     ],
-    "sponsor": "Medicalschool Hamburg"
+    "sponsor": "Medicalschool Hamburg",
+    "contact_emails": [
+      "susanne.sarkar@hafencity-institut-psychotherapie.de",
+      "friederike.meyer@hafencity-institut-psychotherapie.de"
+    ]
   },
   {
     "nct_id": "NCT06687694",
@@ -9225,7 +9783,11 @@
         "lon": -0.12574
       }
     ],
-    "sponsor": "King's College London"
+    "sponsor": "King's College London",
+    "contact_emails": [
+      "IMATStudy@kcl.ac.uk",
+      "IMATStudy@kcl.ac.uk"
+    ]
   },
   {
     "nct_id": "NCT07265180",
@@ -9269,7 +9831,11 @@
         "lon": 13.41053
       }
     ],
-    "sponsor": "Charite University, Berlin, Germany"
+    "sponsor": "Charite University, Berlin, Germany",
+    "contact_emails": [
+      "marco.zierhut@charite.de",
+      "kerem.boege@charite.de"
+    ]
   },
   {
     "nct_id": "NCT06881810",
@@ -9313,7 +9879,10 @@
         "lon": 8.46694
       }
     ],
-    "sponsor": "Central Institute of Mental Health, Mannheim"
+    "sponsor": "Central Institute of Mental Health, Mannheim",
+    "contact_emails": [
+      "dusan.hirjak@zi-mannheim.de"
+    ]
   },
   {
     "nct_id": "NCT05208190",
@@ -9390,7 +9959,10 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "New York State Psychiatric Institute"
+    "sponsor": "New York State Psychiatric Institute",
+    "contact_emails": [
+      "ragy.girgis@nyspi.columbia.edu"
+    ]
   },
   {
     "nct_id": "NCT05956327",
@@ -9436,7 +10008,11 @@
         "lon": 11.57549
       }
     ],
-    "sponsor": "LMU Klinikum"
+    "sponsor": "LMU Klinikum",
+    "contact_emails": [
+      "Isabel.Maurus@med.uni-muenchen.de",
+      "Lukas.Roell@med.uni-muenchen.de"
+    ]
   },
   {
     "nct_id": "NCT06494124",
@@ -9484,7 +10060,11 @@
         "lon": 85.83385
       }
     ],
-    "sponsor": "All India Institute of Medical Sciences, Bhubaneswar"
+    "sponsor": "All India Institute of Medical Sciences, Bhubaneswar",
+    "contact_emails": [
+      "brm1678@gmail.com",
+      "psych_debadatta@aiimsbhubaneswar.edu.in"
+    ]
   },
   {
     "nct_id": "NCT06616337",
@@ -9517,7 +10097,10 @@
         "lon": 7.74553
       }
     ],
-    "sponsor": "University Hospital, Strasbourg, France"
+    "sponsor": "University Hospital, Strasbourg, France",
+    "contact_emails": [
+      "sebastien.weibel@chru-strasbourg.fr"
+    ]
   },
   {
     "nct_id": "NCT02778256",
@@ -9562,7 +10145,10 @@
         "lon": -70.64827
       }
     ],
-    "sponsor": "Vest Brain,Centro de Estudios Neurovestibulares"
+    "sponsor": "Vest Brain,Centro de Estudios Neurovestibulares",
+    "contact_emails": [
+      "amsozaried@vestbrain.cl"
+    ]
   },
   {
     "nct_id": "NCT02604277",
@@ -9616,7 +10202,10 @@
         "lon": -84.38798
       }
     ],
-    "sponsor": "Emory University"
+    "sponsor": "Emory University",
+    "contact_emails": [
+      "dorian.lamis@emory.edu"
+    ]
   },
   {
     "nct_id": "NCT05384405",
@@ -9661,7 +10250,11 @@
         "lon": 112.97087
       }
     ],
-    "sponsor": "Central South University"
+    "sponsor": "Central South University",
+    "contact_emails": [
+      "wurenrong@csu.edu.cn",
+      "jinghuangserena001@csu.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT05153382",
@@ -9701,7 +10294,11 @@
         "lon": -79.39864
       }
     ],
-    "sponsor": "Centre for Addiction and Mental Health"
+    "sponsor": "Centre for Addiction and Mental Health",
+    "contact_emails": [
+      "vanessa.rajamani@camh.ca",
+      "amanda.moss@camh.ca"
+    ]
   },
   {
     "nct_id": "NCT07213466",
@@ -9758,7 +10355,11 @@
         "lon": -92.4699
       }
     ],
-    "sponsor": "Mayo Clinic"
+    "sponsor": "Mayo Clinic",
+    "contact_emails": [
+      "harper.laura1@mayo.edu",
+      "lindstrom.karin@mayo.edu"
+    ]
   },
   {
     "nct_id": "NCT06399523",
@@ -9804,7 +10405,8 @@
         "lon": 121.45806
       }
     ],
-    "sponsor": "Shanghai Mental Health Center"
+    "sponsor": "Shanghai Mental Health Center",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06482762",
@@ -9844,7 +10446,11 @@
         "lon": -71.05977
       }
     ],
-    "sponsor": "Massachusetts General Hospital"
+    "sponsor": "Massachusetts General Hospital",
+    "contact_emails": [
+      "ddougherty@mgb.org",
+      "jmarum@mgh.harvard.edu"
+    ]
   },
   {
     "nct_id": "NCT04216186",
@@ -9888,7 +10494,10 @@
         "lon": 31.00192
       }
     ],
-    "sponsor": "Sherief Abd-Elsalam"
+    "sponsor": "Sherief Abd-Elsalam",
+    "contact_emails": [
+      "sheriefabdelsalam@yahoo.com"
+    ]
   },
   {
     "nct_id": "NCT05584059",
@@ -9964,7 +10573,10 @@
         "lon": 114.17469
       }
     ],
-    "sponsor": "Chinese University of Hong Kong"
+    "sponsor": "Chinese University of Hong Kong",
+    "contact_emails": [
+      "conniechong@cuhk.edu.hk"
+    ]
   },
   {
     "nct_id": "NCT06703242",
@@ -10004,7 +10616,10 @@
         "lon": 35.21633
       }
     ],
-    "sponsor": "Adina Maeir"
+    "sponsor": "Adina Maeir",
+    "contact_emails": [
+      "jennifer.budman@mail.huji.ac.il"
+    ]
   },
   {
     "nct_id": "NCT05935722",
@@ -10082,7 +10697,11 @@
         "lon": 17.63889
       }
     ],
-    "sponsor": "Örebro University, Sweden"
+    "sponsor": "Örebro University, Sweden",
+    "contact_emails": [
+      "tommie.forslund@psychology.su.se",
+      "birgitta.wennberg@liu.se"
+    ]
   },
   {
     "nct_id": "NCT06984809",
@@ -10147,7 +10766,11 @@
         "lon": 10.74609
       }
     ],
-    "sponsor": "University of Tromso"
+    "sponsor": "University of Tromso",
+    "contact_emails": [
+      "kurt.h.dalmo@uit.no",
+      "geraldine.mabille@uit.no"
+    ]
   },
   {
     "nct_id": "NCT07189442",
@@ -10192,7 +10815,11 @@
         "lon": -101.85517
       }
     ],
-    "sponsor": "Texas Tech University Health Sciences Center"
+    "sponsor": "Texas Tech University Health Sciences Center",
+    "contact_emails": [
+      "samudani.dhanasekara@ttuhsc.edu",
+      "chanaka.kahathuduwa@ttuhsc.edu"
+    ]
   },
   {
     "nct_id": "NCT05683756",
@@ -10272,7 +10899,10 @@
         "lon": -79.99589
       }
     ],
-    "sponsor": "University of Pittsburgh"
+    "sponsor": "University of Pittsburgh",
+    "contact_emails": [
+      "liebherrh@upmc.edu"
+    ]
   },
   {
     "nct_id": "NCT05997680",
@@ -10323,7 +10953,11 @@
         "lon": -73.58781
       }
     ],
-    "sponsor": "Anne Gallagher"
+    "sponsor": "Anne Gallagher",
+    "contact_emails": [
+      "anne.gallagher.hsj@ssss.gouv.qc.ca",
+      "marie-noelle.simard@umontreal.ca"
+    ]
   },
   {
     "nct_id": "NCT07256704",
@@ -10365,7 +10999,10 @@
         "lon": 8.30635
       }
     ],
-    "sponsor": "Luzerner Kantonsspital"
+    "sponsor": "Luzerner Kantonsspital",
+    "contact_emails": [
+      "thomas.nyffeler@luks.ch"
+    ]
   },
   {
     "nct_id": "NCT07056621",
@@ -10398,7 +11035,11 @@
         "lon": 23.72784
       }
     ],
-    "sponsor": "Biomedical Research Foundation, Academy of Athens"
+    "sponsor": "Biomedical Research Foundation, Academy of Athens",
+    "contact_emails": [
+      "boumpasd@uoc.gr",
+      "afanour@med.uoa.gr"
+    ]
   },
   {
     "nct_id": "NCT06513429",
@@ -10438,7 +11079,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Peking University Third Hospital"
+    "sponsor": "Peking University Third Hospital",
+    "contact_emails": [
+      "zhao-jinxia@163.com"
+    ]
   },
   {
     "nct_id": "NCT06789107",
@@ -10488,7 +11132,11 @@
         "lon": 120.16142
       }
     ],
-    "sponsor": "Mao Jianhua"
+    "sponsor": "Mao Jianhua",
+    "contact_emails": [
+      "maojh88@zju.edu.cn",
+      "6510007@zju.edu.cn"
+    ]
   },
   {
     "nct_id": "NCT00756769",
@@ -10521,7 +11169,10 @@
         "lon": -79.93275
       }
     ],
-    "sponsor": "Medical University of South Carolina"
+    "sponsor": "Medical University of South Carolina",
+    "contact_emails": [
+      "kamend@musc.edu"
+    ]
   },
   {
     "nct_id": "NCT06613360",
@@ -10594,7 +11245,10 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "Cullinan Therapeutics Inc."
+    "sponsor": "Cullinan Therapeutics Inc.",
+    "contact_emails": [
+      "ClinOps@cullinantx.com"
+    ]
   },
   {
     "nct_id": "NCT06675422",
@@ -10635,7 +11289,11 @@
         "lon": 102.71833
       }
     ],
-    "sponsor": "920th Hospital of Joint Logistics Support Force of People's Liberation Army of China"
+    "sponsor": "920th Hospital of Joint Logistics Support Force of People's Liberation Army of China",
+    "contact_emails": [
+      "sanbin1011@163.com",
+      "Lystch@qq.com"
+    ]
   },
   {
     "nct_id": "NCT04334031",
@@ -10687,7 +11345,10 @@
         "lon": 3.05512
       }
     ],
-    "sponsor": "University Hospital, Lille"
+    "sponsor": "University Hospital, Lille",
+    "contact_emails": [
+      "david.launay@chru-lille.fr"
+    ]
   },
   {
     "nct_id": "NCT06659029",
@@ -10725,7 +11386,10 @@
         "lon": -77.94604
       }
     ],
-    "sponsor": "AstraZeneca"
+    "sponsor": "AstraZeneca",
+    "contact_emails": [
+      "information.center@astrazeneca.com"
+    ]
   },
   {
     "nct_id": "NCT05440422",
@@ -10771,7 +11435,11 @@
         "lon": -77.10026
       }
     ],
-    "sponsor": "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)"
+    "sponsor": "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)",
+    "contact_emails": [
+      "lubna.hooda@nih.gov",
+      "mariana.kaplan@nih.gov"
+    ]
   },
   {
     "nct_id": "NCT07201129",
@@ -10848,7 +11516,10 @@
         "lon": -95.45883
       }
     ],
-    "sponsor": "Viatris Innovation GmbH"
+    "sponsor": "Viatris Innovation GmbH",
+    "contact_emails": [
+      "viatrisinnovationclinicaltrials@viatris.com"
+    ]
   },
   {
     "nct_id": "NCT06991114",
@@ -10928,7 +11599,10 @@
         "lon": -80.13921
       }
     ],
-    "sponsor": "Artiva Biotherapeutics, Inc."
+    "sponsor": "Artiva Biotherapeutics, Inc.",
+    "contact_emails": [
+      "clinicaltrials@artivabio.com"
+    ]
   },
   {
     "nct_id": "NCT07126431",
@@ -10961,7 +11635,10 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Peking University Third Hospital"
+    "sponsor": "Peking University Third Hospital",
+    "contact_emails": [
+      "zhao-jinxia@163.com"
+    ]
   },
   {
     "nct_id": "NCT06913907",
@@ -11001,7 +11678,10 @@
         "lon": null
       }
     ],
-    "sponsor": "Keio University"
+    "sponsor": "Keio University",
+    "contact_emails": [
+      "ykaneko.z6@keio.jp"
+    ]
   },
   {
     "nct_id": "NCT03510442",
@@ -11037,7 +11717,11 @@
         "lon": -77.10026
       }
     ],
-    "sponsor": "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)"
+    "sponsor": "National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS)",
+    "contact_emails": [
+      "millwoodmr@mail.nih.gov",
+      "ombrellomj@mail.nih.gov"
+    ]
   },
   {
     "nct_id": "NCT04134169",
@@ -11075,7 +11759,10 @@
         "lon": 126.9784
       }
     ],
-    "sponsor": "Kang Stem Biotech Co., Ltd."
+    "sponsor": "Kang Stem Biotech Co., Ltd.",
+    "contact_emails": [
+      "cejeon@kangstem.com"
+    ]
   },
   {
     "nct_id": "NCT06454370",
@@ -11109,7 +11796,11 @@
         "lon": 4.82823
       }
     ],
-    "sponsor": "Centre Hospitalier de Mâcon"
+    "sponsor": "Centre Hospitalier de Mâcon",
+    "contact_emails": [
+      "thmaillet@ch-macon.fr",
+      "thomas.maldiney@ch-chalon71.fr"
+    ]
   },
   {
     "nct_id": "NCT06299917",
@@ -11151,7 +11842,11 @@
         "lon": 9.78917
       }
     ],
-    "sponsor": "The Danish Center for Expertise in Rheumatology"
+    "sponsor": "The Danish Center for Expertise in Rheumatology",
+    "contact_emails": [
+      "cmadsen@danskgigthospital.dk",
+      "jprimdahl@danskgigthospital.dk"
+    ]
   },
   {
     "nct_id": "NCT06567470",
@@ -11235,7 +11930,10 @@
         "lon": 13.31243
       }
     ],
-    "sponsor": "Citryll BV"
+    "sponsor": "Citryll BV",
+    "contact_emails": [
+      "lmiddelink@citryll.com"
+    ]
   },
   {
     "nct_id": "NCT06779123",
@@ -11311,7 +12009,11 @@
         "lon": 18.06871
       }
     ],
-    "sponsor": "taVNS AB"
+    "sponsor": "taVNS AB",
+    "contact_emails": [
+      "jon.lampa@ki.se",
+      "linda.regner-dyberg@regionstockholm.se"
+    ]
   },
   {
     "nct_id": "NCT06579222",
@@ -11352,7 +12054,10 @@
         "lon": -80.51639
       }
     ],
-    "sponsor": "Western University, Canada"
+    "sponsor": "Western University, Canada",
+    "contact_emails": [
+      "wrheumatologystudy@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT04815187",
@@ -11406,7 +12111,8 @@
         "lon": -118.24368
       }
     ],
-    "sponsor": "House Ear Institute"
+    "sponsor": "House Ear Institute",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT01759186",
@@ -11463,7 +12169,8 @@
         "lon": -77.46026
       }
     ],
-    "sponsor": "The Cleveland Clinic"
+    "sponsor": "The Cleveland Clinic",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06453382",
@@ -11506,7 +12213,8 @@
         "lon": 90.40744
       }
     ],
-    "sponsor": "BRAC University"
+    "sponsor": "BRAC University",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT05689983",
@@ -11552,7 +12260,8 @@
         "lon": -90.19789
       }
     ],
-    "sponsor": "Washington University School of Medicine"
+    "sponsor": "Washington University School of Medicine",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06376045",
@@ -11628,7 +12337,8 @@
         "lon": -118.24368
       }
     ],
-    "sponsor": "Amgen"
+    "sponsor": "Amgen",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT04215783",
@@ -11686,7 +12396,8 @@
         "lon": -89.40123
       }
     ],
-    "sponsor": "University of Wisconsin, Madison"
+    "sponsor": "University of Wisconsin, Madison",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06502366",
@@ -11766,7 +12477,8 @@
         "lon": -117.29198
       }
     ],
-    "sponsor": "AstraZeneca"
+    "sponsor": "AstraZeneca",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT04520165",
@@ -11799,7 +12511,8 @@
         "lon": 5.56749
       }
     ],
-    "sponsor": "University of Liege"
+    "sponsor": "University of Liege",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT06507943",
@@ -11839,7 +12552,8 @@
         "lon": -72.92816
       }
     ],
-    "sponsor": "Yale University"
+    "sponsor": "Yale University",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT04227483",
@@ -11884,7 +12598,8 @@
         "lon": 76.7884
       }
     ],
-    "sponsor": "Post Graduate Institute of Medical Education and Research, Chandigarh"
+    "sponsor": "Post Graduate Institute of Medical Education and Research, Chandigarh",
+    "contact_emails": []
   },
   {
     "nct_id": "NCT07394712",
@@ -11934,7 +12649,11 @@
         "lon": 0.62218
       }
     ],
-    "sponsor": "Institut de Recerca Biomèdica de Lleida"
+    "sponsor": "Institut de Recerca Biomèdica de Lleida",
+    "contact_emails": [
+      "jgonzalezgutierrez88@gmail.com",
+      "febarbe.lleida.ics@gencat.cat"
+    ]
   },
   {
     "nct_id": "NCT04179981",
@@ -11986,7 +12705,10 @@
         "lon": -83.04575
       }
     ],
-    "sponsor": "VA Office of Research and Development"
+    "sponsor": "VA Office of Research and Development",
+    "contact_emails": [
+      "ruchi.rastogi@va.gov"
+    ]
   },
   {
     "nct_id": "NCT06274957",
@@ -12034,7 +12756,11 @@
         "lon": 28.94966
       }
     ],
-    "sponsor": "Saglik Bilimleri Universitesi"
+    "sponsor": "Saglik Bilimleri Universitesi",
+    "contact_emails": [
+      "zuhal.kunduracilar@sbu.edu.tr",
+      "gamzealtinkaynak@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT07086339",
@@ -12083,7 +12809,11 @@
         "lon": 6.56667
       }
     ],
-    "sponsor": "Pulmair Medical, Inc."
+    "sponsor": "Pulmair Medical, Inc.",
+    "contact_emails": [
+      "tkruger@pulmair.com",
+      "mgil@pulmair.com"
+    ]
   },
   {
     "nct_id": "NCT06780046",
@@ -12148,7 +12878,10 @@
         "lon": -54.64639
       }
     ],
-    "sponsor": "AstraZeneca"
+    "sponsor": "AstraZeneca",
+    "contact_emails": [
+      "information.center@astrazeneca.com"
+    ]
   },
   {
     "nct_id": "NCT05730088",
@@ -12196,7 +12929,10 @@
         "lon": 32.48464
       }
     ],
-    "sponsor": "Necmettin Erbakan University"
+    "sponsor": "Necmettin Erbakan University",
+    "contact_emails": [
+      "smhasanbakir@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06330623",
@@ -12229,7 +12965,11 @@
         "lon": -1.13169
       }
     ],
-    "sponsor": "University of Leicester"
+    "sponsor": "University of Leicester",
+    "contact_emails": [
+      "phile1@leicester.ac.uk",
+      "mwo4@leicester.ac.uk"
+    ]
   },
   {
     "nct_id": "NCT06286072",
@@ -12270,7 +13010,10 @@
         "lon": 34.16389
       }
     ],
-    "sponsor": "Kirsehir Ahi Evran Universitesi"
+    "sponsor": "Kirsehir Ahi Evran Universitesi",
+    "contact_emails": [
+      "yasemin-ceyhan@hotmail.com"
+    ]
   },
   {
     "nct_id": "NCT03152669",
@@ -12303,7 +13046,11 @@
         "lon": -2.23743
       }
     ],
-    "sponsor": "GlaxoSmithKline"
+    "sponsor": "GlaxoSmithKline",
+    "contact_emails": [
+      "GSKClinicalSupportHD@gsk.com",
+      "GSKClinicalSupportHD@gsk.com"
+    ]
   },
   {
     "nct_id": "NCT06042387",
@@ -12344,7 +13091,11 @@
         "lon": -79.39864
       }
     ],
-    "sponsor": "Mount Sinai Hospital, Canada"
+    "sponsor": "Mount Sinai Hospital, Canada",
+    "contact_emails": [
+      "joanne.stempak@sinaihealth.ca",
+      "jenny.lee2@sinaihealth.ca"
+    ]
   },
   {
     "nct_id": "NCT06681181",
@@ -12388,7 +13139,11 @@
         "lon": 0.11667
       }
     ],
-    "sponsor": "GlaxoSmithKline"
+    "sponsor": "GlaxoSmithKline",
+    "contact_emails": [
+      "GSKClinicalSupportHD@gsk.com",
+      "GSKClinicalSupportHD@gsk.com"
+    ]
   },
   {
     "nct_id": "NCT06810518",
@@ -12443,7 +13198,11 @@
         "lon": -81.91792
       }
     ],
-    "sponsor": "American Laboratory Products Company"
+    "sponsor": "American Laboratory Products Company",
+    "contact_emails": [
+      "clinops@alpco.com",
+      "regulatory@alpco.com"
+    ]
   },
   {
     "nct_id": "NCT07305454",
@@ -12485,7 +13244,10 @@
         "lon": 1.44367
       }
     ],
-    "sponsor": "University Hospital, Toulouse"
+    "sponsor": "University Hospital, Toulouse",
+    "contact_emails": [
+      "gilletta.c@chu-toulouse.fr"
+    ]
   },
   {
     "nct_id": "NCT06631586",
@@ -12529,7 +13291,10 @@
         "lon": -93.26384
       }
     ],
-    "sponsor": "University of Minnesota"
+    "sponsor": "University of Minnesota",
+    "contact_emails": [
+      "bvaughn@umn.edu"
+    ]
   },
   {
     "nct_id": "NCT06045754",
@@ -12613,7 +13378,10 @@
         "lon": -117.92895
       }
     ],
-    "sponsor": "Takeda"
+    "sponsor": "Takeda",
+    "contact_emails": [
+      "medinfoUS@takeda.com"
+    ]
   },
   {
     "nct_id": "NCT06298188",
@@ -12653,7 +13421,10 @@
         "lon": 35.21633
       }
     ],
-    "sponsor": "Shaare Zedek Medical Center"
+    "sponsor": "Shaare Zedek Medical Center",
+    "contact_emails": [
+      "natalyk@szmc.org.il"
+    ]
   },
   {
     "nct_id": "NCT06758024",
@@ -12699,7 +13470,11 @@
         "lon": -70.64827
       }
     ],
-    "sponsor": "Pontificia Universidad Catolica de Chile"
+    "sponsor": "Pontificia Universidad Catolica de Chile",
+    "contact_emails": [
+      "caherna4@uc.cl",
+      "cdpavez@uc.cl"
+    ]
   },
   {
     "nct_id": "NCT06221254",
@@ -12767,7 +13542,11 @@
         "lon": 34.81065
       }
     ],
-    "sponsor": "Soroka University Medical Center"
+    "sponsor": "Soroka University Medical Center",
+    "contact_emails": [
+      "DoronSh@clalit.org.il",
+      "odes@bgu.ac.il"
+    ]
   },
   {
     "nct_id": "NCT05835973",
@@ -12837,7 +13616,11 @@
         "lon": 4.39
       }
     ],
-    "sponsor": "Hospices Civils de Lyon"
+    "sponsor": "Hospices Civils de Lyon",
+    "contact_emails": [
+      "gilles.boschetti@chu-lyon.fr",
+      "maelys.cheviakoff01@chu-lyon.fr"
+    ]
   },
   {
     "nct_id": "NCT07017699",
@@ -12879,7 +13662,10 @@
         "lon": -117.2742
       }
     ],
-    "sponsor": "Bristol-Myers Squibb"
+    "sponsor": "Bristol-Myers Squibb",
+    "contact_emails": [
+      "Clinical.Trials@bms.com"
+    ]
   },
   {
     "nct_id": "NCT06399432",
@@ -12919,7 +13705,10 @@
         "lon": -81.69541
       }
     ],
-    "sponsor": "University Hospitals Cleveland Medical Center"
+    "sponsor": "University Hospitals Cleveland Medical Center",
+    "contact_emails": [
+      "Kymberlyn.Warner@UHhospitals.org"
+    ]
   },
   {
     "nct_id": "NCT06382987",
@@ -12969,7 +13758,10 @@
         "lon": 130.41667
       }
     ],
-    "sponsor": "Bristol-Myers Squibb"
+    "sponsor": "Bristol-Myers Squibb",
+    "contact_emails": [
+      "Clinical.Trials@bms.com"
+    ]
   },
   {
     "nct_id": "NCT06382051",
@@ -13042,7 +13834,11 @@
         "lon": -79.84963
       }
     ],
-    "sponsor": "Novartis Pharmaceuticals"
+    "sponsor": "Novartis Pharmaceuticals",
+    "contact_emails": [
+      "novartis.email@novartis.com",
+      "novartis.email@novartis.com"
+    ]
   },
   {
     "nct_id": "NCT06905028",
@@ -13083,7 +13879,10 @@
         "lon": 13.41053
       }
     ],
-    "sponsor": "Charite University, Berlin, Germany"
+    "sponsor": "Charite University, Berlin, Germany",
+    "contact_emails": [
+      "risefast@charite.de"
+    ]
   },
   {
     "nct_id": "NCT07039110",
@@ -13148,7 +13947,10 @@
         "lon": -77.38277
       }
     ],
-    "sponsor": "AbbVie"
+    "sponsor": "AbbVie",
+    "contact_emails": [
+      "julieta.gonzalezblanco@abbvie.com"
+    ]
   },
   {
     "nct_id": "NCT04347473",
@@ -13188,7 +13990,11 @@
         "lon": -74.54043
       }
     ],
-    "sponsor": "Psoriasis Treatment Center of Central New Jersey"
+    "sponsor": "Psoriasis Treatment Center of Central New Jersey",
+    "contact_emails": [
+      "dreamacres1@aol.com",
+      "enelson@windsordermatology.com"
+    ]
   },
   {
     "nct_id": "NCT04864886",
@@ -13224,7 +14030,11 @@
         "lon": -77.10026
       }
     ],
-    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)"
+    "sponsor": "National Institute of Allergy and Infectious Diseases (NIAID)",
+    "contact_emails": [
+      "jodi.blake@nih.gov",
+      "mylesi@niaid.nih.gov"
+    ]
   },
   {
     "nct_id": "NCT06405464",
@@ -13282,7 +14092,11 @@
         "lon": 8.55
       }
     ],
-    "sponsor": "University of Zurich"
+    "sponsor": "University of Zurich",
+    "contact_emails": [
+      "dominique.braun@usz.ch",
+      "jessy.duranramirez@usz.ch"
+    ]
   },
   {
     "nct_id": "NCT07223398",
@@ -13350,7 +14164,11 @@
         "lon": -97.32085
       }
     ],
-    "sponsor": "Yale University"
+    "sponsor": "Yale University",
+    "contact_emails": [
+      "Sandra.springer@yale.edu",
+      "Cyndi.frank@yale.edu"
+    ]
   },
   {
     "nct_id": "NCT06005298",
@@ -13393,7 +14211,11 @@
         "lon": -85.75941
       }
     ],
-    "sponsor": "Shirish S Barve"
+    "sponsor": "Shirish S Barve",
+    "contact_emails": [
+      "a0reye02@louisville.edu",
+      "vania.remenik@louisville.edu"
+    ]
   },
   {
     "nct_id": "NCT06479980",
@@ -13435,7 +14257,11 @@
         "lon": -122.33207
       }
     ],
-    "sponsor": "University of Washington"
+    "sponsor": "University of Washington",
+    "contact_emails": [
+      "avb9@uw.edu",
+      "danc611@uw.edu"
+    ]
   },
   {
     "nct_id": "NCT05729256",
@@ -13481,7 +14307,11 @@
         "lon": -71.05977
       }
     ],
-    "sponsor": "Boston University Charles River Campus"
+    "sponsor": "Boston University Charles River Campus",
+    "contact_emails": [
+      "palfai@bu.edu",
+      "mkratzer@bu.edu"
+    ]
   },
   {
     "nct_id": "NCT07042945",
@@ -13529,7 +14359,10 @@
         "lon": 26.10626
       }
     ],
-    "sponsor": "Merck Sharp & Dohme LLC"
+    "sponsor": "Merck Sharp & Dohme LLC",
+    "contact_emails": [
+      "Trialsites@msd.com"
+    ]
   },
   {
     "nct_id": "NCT07117656",
@@ -13570,7 +14403,10 @@
         "lon": 28.04363
       }
     ],
-    "sponsor": "Arizona State University"
+    "sponsor": "Arizona State University",
+    "contact_emails": [
+      "Joseph.A.Daniels@asu.edu"
+    ]
   },
   {
     "nct_id": "NCT06904456",
@@ -13603,7 +14439,11 @@
         "lon": 28.28713
       }
     ],
-    "sponsor": "Boston University"
+    "sponsor": "Boston University",
+    "contact_emails": [
+      "sbrosen@bu.edu",
+      "nscott@bu.edu"
+    ]
   },
   {
     "nct_id": "NCT06252402",
@@ -13651,7 +14491,11 @@
         "lon": -117.16472
       }
     ],
-    "sponsor": "City of Hope Medical Center"
+    "sponsor": "City of Hope Medical Center",
+    "contact_emails": [
+      "mhanashiro@health.ucsd.edu",
+      "smhendrickx@health.ucsd.edu"
+    ]
   },
   {
     "nct_id": "NCT07428330",
@@ -13697,7 +14541,11 @@
         "lon": 32.58219
       }
     ],
-    "sponsor": "UNC Lineberger Comprehensive Cancer Center"
+    "sponsor": "UNC Lineberger Comprehensive Cancer Center",
+    "contact_emails": [
+      "jennifers@unc.edu",
+      "kokwunze@unc.edu"
+    ]
   },
   {
     "nct_id": "NCT05140941",
@@ -13770,7 +14618,11 @@
         "lon": -111.89105
       }
     ],
-    "sponsor": "Catherine Anne Chappell"
+    "sponsor": "Catherine Anne Chappell",
+    "contact_emails": [
+      "chappellca@upmc.edu",
+      "meynla@mwri.magee.edu"
+    ]
   },
   {
     "nct_id": "NCT03135886",
@@ -13821,7 +14673,11 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "Columbia University"
+    "sponsor": "Columbia University",
+    "contact_emails": [
+      "lkg2129@columbia.edu",
+      "tl2547@columbia.edu"
+    ]
   },
   {
     "nct_id": "NCT05361603",
@@ -13858,7 +14714,11 @@
         "lon": 1.24759
       }
     ],
-    "sponsor": "University Hospital, Limoges"
+    "sponsor": "University Hospital, Limoges",
+    "contact_emails": [
+      "MARILYNE.GRATIEN@chu-limoges.fr",
+      "veronique.loustaud-ratti@unilim.fr"
+    ]
   },
   {
     "nct_id": "NCT06904820",
@@ -13891,7 +14751,10 @@
         "lon": 1.24759
       }
     ],
-    "sponsor": "University Hospital, Limoges"
+    "sponsor": "University Hospital, Limoges",
+    "contact_emails": [
+      "marilyne.gratien@chu-limoges.fr"
+    ]
   },
   {
     "nct_id": "NCT05968573",
@@ -13940,7 +14803,10 @@
         "lon": -74.00597
       }
     ],
-    "sponsor": "Icahn School of Medicine at Mount Sinai"
+    "sponsor": "Icahn School of Medicine at Mount Sinai",
+    "contact_emails": [
+      "Roland.Merchant@mountsinai.org"
+    ]
   },
   {
     "nct_id": "NCT07095192",
@@ -14011,7 +14877,11 @@
         "lon": -71.21454
       }
     ],
-    "sponsor": "McGill University"
+    "sponsor": "McGill University",
+    "contact_emails": [
+      "meagan.mooney@mail.mcgill.ca",
+      "charlene.weight@mail.mcgill.ca"
+    ]
   },
   {
     "nct_id": "NCT06431945",
@@ -14085,7 +14955,11 @@
         "lon": 15.83277
       }
     ],
-    "sponsor": "Institute of Health Information and Statistics of the Czech Republic"
+    "sponsor": "Institute of Health Information and Statistics of the Czech Republic",
+    "contact_emails": [
+      "nikola.stourac@uzis.cz",
+      "lucie.mandelova@uzis.cz"
+    ]
   },
   {
     "nct_id": "NCT06928259",
@@ -14142,7 +15016,10 @@
         "lon": -5.97317
       }
     ],
-    "sponsor": "University of Seville"
+    "sponsor": "University of Seville",
+    "contact_emails": [
+      "jmacias7@us.es"
+    ]
   },
   {
     "nct_id": "NCT07487623",
@@ -14195,7 +15072,10 @@
         "lon": -103.34749
       }
     ],
-    "sponsor": "University of Guadalajara"
+    "sponsor": "University of Guadalajara",
+    "contact_emails": [
+      "roberto.rodriguez@academico.udg.mx"
+    ]
   },
   {
     "nct_id": "NCT07037277",
@@ -14274,7 +15154,10 @@
         "lon": 3.08682
       }
     ],
-    "sponsor": "Atea Pharmaceuticals, Inc."
+    "sponsor": "Atea Pharmaceuticals, Inc.",
+    "contact_emails": [
+      "ateaclinicaltrials@ateapharma.com"
+    ]
   },
   {
     "nct_id": "NCT06938152",
@@ -14319,7 +15202,10 @@
         "lon": 121.52639
       }
     ],
-    "sponsor": "National Taiwan University Hospital"
+    "sponsor": "National Taiwan University Hospital",
+    "contact_emails": [
+      "k880113a@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT06488872",
@@ -14359,7 +15245,11 @@
         "lon": 7.57327
       }
     ],
-    "sponsor": "University Department of Geriatric Medicine FELIX PLATTER"
+    "sponsor": "University Department of Geriatric Medicine FELIX PLATTER",
+    "contact_emails": [
+      "andreasmfischer.basel@gmail.com",
+      "andreasmfischer.basel@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT07120997",
@@ -14407,7 +15297,11 @@
         "lon": -77.85639
       }
     ],
-    "sponsor": "Penn State University"
+    "sponsor": "Penn State University",
+    "contact_emails": [
+      "mjd34@psu.edu",
+      "niw1@psu.edu"
+    ]
   },
   {
     "nct_id": "NCT06059222",
@@ -14467,7 +15361,10 @@
         "lon": 10.21076
       }
     ],
-    "sponsor": "University of Aarhus"
+    "sponsor": "University of Aarhus",
+    "contact_emails": [
+      "vivmaa@rm.dk"
+    ]
   },
   {
     "nct_id": "NCT06643780",
@@ -14511,7 +15408,10 @@
         "lon": 114.17469
       }
     ],
-    "sponsor": "Prince of Wales Hospital, Shatin, Hong Kong"
+    "sponsor": "Prince of Wales Hospital, Shatin, Hong Kong",
+    "contact_emails": [
+      "ronald.wong@cuhk.edu.hk"
+    ]
   },
   {
     "nct_id": "NCT01747291",
@@ -14562,7 +15462,10 @@
         "lon": -79.39864
       }
     ],
-    "sponsor": "University Health Network, Toronto"
+    "sponsor": "University Health Network, Toronto",
+    "contact_emails": [
+      "jscher@uhnresearch.ca"
+    ]
   },
   {
     "nct_id": "NCT05912309",
@@ -14613,7 +15516,10 @@
         "lon": -1.64323
       }
     ],
-    "sponsor": "Idoia Labayen"
+    "sponsor": "Idoia Labayen",
+    "contact_emails": [
+      "idoia.labayen@unavarra.es"
+    ]
   },
   {
     "nct_id": "NCT07333989",
@@ -14658,7 +15564,10 @@
         "lon": 30.31418
       }
     ],
-    "sponsor": "Mohamed Said Alsafy Alhamrawy"
+    "sponsor": "Mohamed Said Alsafy Alhamrawy",
+    "contact_emails": [
+      "Mohamedalhamrawy333@gmail.com"
+    ]
   },
   {
     "nct_id": "NCT04608630",
@@ -14743,7 +15652,11 @@
         "lon": 150.89345
       }
     ],
-    "sponsor": "Australian and New Zealand Intensive Care Research Centre"
+    "sponsor": "Australian and New Zealand Intensive Care Research Centre",
+    "contact_emails": [
+      "allison.bone@monash.edu",
+      "tony.trapani@monash.edu"
+    ]
   },
   {
     "nct_id": "NCT02958020",
@@ -14808,6 +15721,9 @@
         "lon": 116.39723
       }
     ],
-    "sponsor": "Shanghai University of Traditional Chinese Medicine"
+    "sponsor": "Shanghai University of Traditional Chinese Medicine",
+    "contact_emails": [
+      "yjwang88@hotmail.com"
+    ]
   }
 ]

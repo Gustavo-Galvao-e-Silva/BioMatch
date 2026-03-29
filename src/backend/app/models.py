@@ -169,11 +169,17 @@ class ResearchStudy(Base):
     countries: Mapped[list[str]] = mapped_column(JSONB, default=list)
 
     sponsor: Mapped[str | None] = mapped_column(String(255), nullable=True)
-    search_text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    contact_emails: Mapped[list[str]] = mapped_column(JSONB, default=list)
+    study_summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    study_embedding: Mapped[list[float] | None] = mapped_column(Vector(384), nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     researcher: Mapped["Researcher | None"] = relationship(back_populates="research_studies")
+
+    @property
+    def search_text(self) -> str | None:
+        return self.study_summary
 
 
 class SessionEnvironment(Base):
