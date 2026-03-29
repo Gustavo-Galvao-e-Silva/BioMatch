@@ -32,10 +32,11 @@ export const router = createBrowserRouter([
   {
     path: "/auth-test",
     Component: AuthTestPage,
-  },{
+  },
+  {
     path: "/patient",
     Component: LandingPage,
-  }
+  },
   { path: "/", Component: LandingPage, },
   { path: "/login", Component: LoginPage, },
   { path: "/dashboard", Component: Dashboard, },
