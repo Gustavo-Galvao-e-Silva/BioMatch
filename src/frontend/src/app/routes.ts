@@ -13,33 +13,11 @@ import ResearcherDashboard from "./pages/researcher/Dashboard";
 import ClaimResearch from "./pages/researcher/ClaimResearch";
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    Component: LandingPage,
-  },
-  {
-    path: "/login/*",
-    Component: LoginPage,
-  },
-  {
-    path: "/sign-up",
-    Component: SignUpPage,
-  },
-  {
-    path: "/dashboard",
-    Component: Dashboard,
-  },
-  {
-    path: "/auth-test",
-    Component: AuthTestPage,
-  },
-  {
-    path: "/patient",
-    Component: LandingPage,
-  },
-  { path: "/", Component: LandingPage, },
-  { path: "/login", Component: LoginPage, },
+  { path: "/login/*", Component: LoginPage, },
+  { path: "/sign-up", Component: SignUpPage, },
   { path: "/dashboard", Component: Dashboard, },
+
+  { path: "/", Component: LandingPage, },
   { path: "/auth-test", Component: AuthTestPage, },
   
   { path: "/patient", Component: PatientDashboard, },
