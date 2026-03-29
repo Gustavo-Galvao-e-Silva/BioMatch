@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from svix.webhooks import Webhook, WebhookVerificationError
 
 from app.database import get_db
-from app.models import User
+from app.models import Patient
 
 router = APIRouter(prefix="/webhooks", tags=["webhooks"])
 
@@ -65,34 +65,34 @@ def _user_fields_from_clerk(data: dict) -> dict:
     }
 
 
-def _sync_user_from_clerk(db: Session, data: dict) -> tuple[User, bool]:
+def _sync_user_from_clerk(db: Session, data: dict) -> tuple[Patient, bool]:
     fields = _user_fields_from_clerk(data)
     clerk_user_id = fields["clerk_user_id"]
 
-    user = db.execute(
-        select(User).where(User.clerk_user_id == clerk_user_id)
+    patient = db.execute(
+        select(Patient).where(Patient.clerk_user_id == clerk_user_id)
     ).scalar_one_or_none()
 
-    if user:
-        user.email = fields["email"]
-        user.phone_number = fields["phone_number"]
-        user.full_name = fields["full_name"]
-        user.role = fields["role"]
+    if patient:
+        patient.email = fields["email"]
+        patient.phone_number = fields["phone_number"]
+        patient.full_name = fields["full_name"]
+        patient.role = fields["role"]
         db.commit()
-        db.refresh(user)
-        return user, False
+        db.refresh(patient)
+        return patient, False
 
-    user = User(
+    patient = Patient(
         clerk_user_id=clerk_user_id,
         email=fields["email"],
         phone_number=fields["phone_number"],
         full_name=fields["full_name"],
         role=fields["role"],
     )
-    db.add(user)
+    db.add(patient)
     db.commit()
-    db.refresh(user)
-    return user, True
+    db.refresh(patient)
+    return patient, True
 
 
 def _delete_user_from_clerk(db: Session, data: dict) -> bool:
@@ -100,14 +100,14 @@ def _delete_user_from_clerk(db: Session, data: dict) -> bool:
     if not clerk_user_id:
         return False
 
-    user = db.execute(
-        select(User).where(User.clerk_user_id == clerk_user_id)
+    patient = db.execute(
+        select(Patient).where(Patient.clerk_user_id == clerk_user_id)
     ).scalar_one_or_none()
 
-    if not user:
+    if not patient:
         return False
 
-    db.delete(user)
+    db.delete(patient)
     db.commit()
     return True
 
@@ -153,19 +153,19 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
     data = event.get("data", {})
 
     if event_type in ("user.created", "user.updated"):
-        user, created = _sync_user_from_clerk(db, data)
+        patient, created = _sync_user_from_clerk(db, data)
 
         if event_type == "user.created" and not created:
             return {
                 "status": "ok",
-                "message": "User already exists",
-                "user_id": user.id,
+                "message": "Patient already exists",
+                "patient_id": patient.id,
             }
 
         return {
             "status": "ok",
-            "message": "User created" if created else "User updated",
-            "user_id": user.id,
+            "message": "Patient created" if created else "Patient updated",
+            "patient_id": patient.id,
         }
 
     if event_type == "user.deleted":
@@ -173,7 +173,7 @@ async def clerk_webhook(request: Request, db: Session = Depends(get_db)):
 
         return {
             "status": "ok",
-            "message": "User deleted" if deleted else "User not found",
+            "message": "Patient deleted" if deleted else "Patient not found",
         }
 
     return {
