@@ -27,6 +27,12 @@ type ChatApiResponse = {
   end?: boolean;
 };
 
+type ReportResponse = {
+  response?: string;
+  message?: string;
+  report?: string;
+};
+
 export default function ChatBotPage() {
   const navigate = useNavigate();
 
@@ -56,6 +62,7 @@ export default function ChatBotPage() {
     last_doctor_message: "",
   });
 
+  const [userStatus, setUserStatus] = useState("");
   const [input, setInput] = useState("");
   const [isSending, setIsSending] = useState(false);
 
@@ -76,6 +83,11 @@ export default function ChatBotPage() {
     setIsSending(true);
 
     try {
+      const nextState: ChatState = {
+        ...chatState,
+        last_patient_message: trimmedInput,
+      };
+
       const response = await fetch(
         "http://localhost:8000/chatbot/post_patient_message",
         {
@@ -84,10 +96,7 @@ export default function ChatBotPage() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            state: {
-              ...chatState,
-              last_patient_message: trimmedInput,
-            },
+            state: nextState,
             message: trimmedInput,
           }),
         }
@@ -99,9 +108,8 @@ export default function ChatBotPage() {
 
       const data: ChatApiResponse = await response.json();
 
-      if (data.state) {
-        setChatState(data.state);
-      }
+      const updatedState = data.state ?? nextState;
+      setChatState(updatedState);
 
       const assistantText =
         data.response ||
@@ -117,7 +125,36 @@ export default function ChatBotPage() {
       setMessages((prev) => [...prev, assistantMessage]);
 
       if (data.end === true) {
-        navigate("/patient");
+        const reportResponse = await fetch("http://44.223.29.123:8000/report", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            state: updatedState,
+          }),
+        });
+
+        if (!reportResponse.ok) {
+          throw new Error("Failed to generate report.");
+        }
+
+        const reportData: ReportResponse = await reportResponse.json();
+
+        const finalUserStatus =
+          reportData.message ||
+          reportData.response ||
+          reportData.report ||
+          "Report generated, but no status message was returned.";
+
+        setUserStatus(finalUserStatus);
+
+        navigate("/patient", {
+          state: {
+            userStatus: finalUserStatus,
+          },
+        });
+
         return;
       }
     } catch (error) {
@@ -159,6 +196,11 @@ export default function ChatBotPage() {
           <p className="mt-1 text-sm text-[#296870]/70">
             Ask questions and get answers in one clean conversation view.
           </p>
+          {userStatus ? (
+            <p className="mt-3 text-sm text-[#0A7F8A]">
+              Latest status: {userStatus}
+            </p>
+          ) : null}
         </div>
 
         <div className="flex-1 overflow-hidden rounded-3xl border border-[#2FCED6]/30 bg-white shadow-xl">

@@ -6,7 +6,7 @@ import httpx
 
 router = APIRouter(prefix="/chatbot", tags=["chatbot"])
 
-UPSTREAM_CHATBOT_URL = "http://44.223.29.123:8000"
+UPSTREAM_CHATBOT_URL = "http://44.223.29.123:8000/chatbot/post_patient_message"
 
 
 class ChatRequest(BaseModel):
@@ -23,7 +23,7 @@ class ChatResponse(BaseModel):
 @router.post("/post_patient_message", response_model=ChatResponse)
 async def send_message_to_chatbot(payload: ChatRequest):
     try:
-        async with httpx.AsyncClient(timeout=30.0) as client:
+        async with httpx.AsyncClient(timeout=120.0) as client:
             upstream_response = await client.post(
                 UPSTREAM_CHATBOT_URL,
                 json={
