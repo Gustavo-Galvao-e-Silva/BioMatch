@@ -13,6 +13,7 @@ from app.api.patient_status import router as patient_status_router
 from app.api.research import router as research_router
 from app.api.chatbot import router as chatbot_router
 from app.api.chat import router as chat_router
+from app.api.matching import router as matching_router
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -37,6 +38,7 @@ app.include_router(patient_status_router)
 app.include_router(research_router)
 app.include_router(chatbot_router)
 app.include_router(chat_router)
+app.include_router(matching_router)
 
 @app.get("/routes")
 def list_routes():

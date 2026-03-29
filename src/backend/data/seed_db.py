@@ -72,9 +72,9 @@ def seed(path: Path = _DEFAULT_PATH) -> None:
         stmt = stmt.on_conflict_do_update(
             index_elements=["nct_id"],
             set_={
-                col: stmt.excluded[col]
-                for col in stmt.excluded.c.keys()
-                if col != "nct_id"
+                col.name: stmt.excluded[col.name]
+                for col in ResearchStudy.__table__.columns
+                if col.name != "nct_id"
             },
         )
         db.execute(stmt)

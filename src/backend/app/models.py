@@ -126,7 +126,7 @@ class PatientStatus(Base):
     symptoms: Mapped[list[str]] = mapped_column(JSONB, default=list)
 
     patient_vector_summary: Mapped[list[float] | None] = mapped_column(
-        Vector(1536),
+        Vector(384),
         nullable=True,
     )
 
