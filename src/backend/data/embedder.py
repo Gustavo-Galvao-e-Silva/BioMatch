@@ -10,7 +10,7 @@ class Embedder(Protocol):
 
 class LocalEmbedder:
     _MODEL_ID = "all-MiniLM-L6-v2"
-    _DIM = 384
+    _DIM = 384  # keep in sync with EMBEDDING_DIM in app/models.py
 
     def __init__(self) -> None:
         from sentence_transformers import SentenceTransformer

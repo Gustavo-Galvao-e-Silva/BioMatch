@@ -1,9 +1,6 @@
 from datetime import date, datetime
 from pydantic import BaseModel, EmailStr, ConfigDict
-from app.database import engine, Base
-import app.models
 
-Base.metadata.create_all(bind=engine)
 
 class PaperCreate(BaseModel):
     title: str
@@ -99,6 +96,7 @@ class ResearchStudyCreate(BaseModel):
     locations: list[StudyLocation]
     countries: list[str]
     sponsor: str
+    contact_emails: list[str] = []
     search_text: str | None = None
 
 
@@ -124,6 +122,7 @@ class ResearchStudyOut(BaseModel):
     locations: list[StudyLocation]
     countries: list[str]
     sponsor: str | None
+    contact_emails: list[str]
     search_text: str | None
     created_at: datetime
 
@@ -146,7 +145,7 @@ class ResearcherOut(BaseModel):
 
 
 class PatientStatusCreate(BaseModel):
-    user_id: int
+    patient_id: int
     sex: str | None = None
     location: str | None = None
     age: int | None = None
@@ -163,7 +162,7 @@ class PatientStatusOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     id: int
-    user_id: int
+    patient_id: int
     sex: str | None
     location: str | None
     age: int | None

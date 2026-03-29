@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import User, PatientStatus
+from app.models import Patient, PatientStatus
 from app.schemas import PatientStatusCreate, PatientStatusOut
 
 router = APIRouter(prefix="/patient-status", tags=["patient-statuses"])
@@ -13,12 +13,12 @@ def create_patient_status(
     payload: PatientStatusCreate,
     db: Session = Depends(get_db),
 ):
-    user = db.get(User, payload.user_id)
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
+    patient = db.get(Patient, payload.patient_id)
+    if not patient:
+        raise HTTPException(status_code=404, detail="Patient not found")
 
     patient_status = PatientStatus(
-        user_id=payload.user_id,
+        patient_id=payload.patient_id,
         sex=payload.sex,
         location=payload.location,
         age=payload.age,

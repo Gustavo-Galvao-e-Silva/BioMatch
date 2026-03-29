@@ -7,9 +7,11 @@ from pgvector.sqlalchemy import Vector
 
 from .database import Base
 
+EMBEDDING_DIM = 384  # all-MiniLM-L6-v2 (local); switch to 1536 for OpenAI text-embedding-3-small
 
-class User(Base):
-    __tablename__ = "users"
+
+class Patient(Base):
+    __tablename__ = "patients"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
     clerk_user_id: Mapped[str] = mapped_column(String(255), unique=True, index=True)
@@ -20,15 +22,15 @@ class User(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
     patient_statuses: Mapped[list["PatientStatus"]] = relationship(
-        back_populates="user",
+        back_populates="patient",
         cascade="all, delete-orphan",
     )
     doctor_profile: Mapped["DoctorProfile | None"] = relationship(
-        back_populates="user",
+        back_populates="patient",
         uselist=False,
     )
     researcher_profile: Mapped["Researcher | None"] = relationship(
-        back_populates="user",
+        back_populates="patient",
         uselist=False,
     )
 
@@ -37,8 +39,8 @@ class DoctorProfile(Base):
     __tablename__ = "doctor_profiles"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
-    user_id: Mapped[int] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"),
+    patient_id: Mapped[int] = mapped_column(
+        ForeignKey("patients.id", ondelete="CASCADE"),
         unique=True,
         index=True,
     )
@@ -50,15 +52,15 @@ class DoctorProfile(Base):
     years_experience: Mapped[int | None] = mapped_column(nullable=True)
     license_number: Mapped[str | None] = mapped_column(String(100), nullable=True)
 
-    user: Mapped["User"] = relationship(back_populates="doctor_profile")
+    patient: Mapped["Patient"] = relationship(back_populates="doctor_profile")
 
 
 class Researcher(Base):
     __tablename__ = "researchers"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
-    user_id: Mapped[int] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"),
+    patient_id: Mapped[int] = mapped_column(
+        ForeignKey("patients.id", ondelete="CASCADE"),
         unique=True,
         index=True,
     )
@@ -72,7 +74,7 @@ class Researcher(Base):
     website_url: Mapped[str | None] = mapped_column(String(500), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
-    user: Mapped["User"] = relationship(back_populates="researcher_profile")
+    patient: Mapped["Patient"] = relationship(back_populates="researcher_profile")
 
     research_papers: Mapped[list["ResearchPaper"]] = relationship(
         back_populates="researcher",
@@ -107,8 +109,8 @@ class PatientStatus(Base):
     __tablename__ = "patient_statuses"
 
     id: Mapped[int] = mapped_column(primary_key=True, index=True)
-    user_id: Mapped[int] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"),
+    patient_id: Mapped[int] = mapped_column(
+        ForeignKey("patients.id", ondelete="CASCADE"),
         index=True,
     )
 
@@ -126,13 +128,13 @@ class PatientStatus(Base):
     symptoms: Mapped[list[str]] = mapped_column(JSONB, default=list)
 
     patient_vector_summary: Mapped[list[float] | None] = mapped_column(
-        Vector(1536),
+        Vector(EMBEDDING_DIM),
         nullable=True,
     )
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
 
-    user: Mapped["User"] = relationship(back_populates="patient_statuses")
+    patient: Mapped["Patient"] = relationship(back_populates="patient_statuses")
 
 
 class ResearchStudy(Base):
@@ -169,6 +171,7 @@ class ResearchStudy(Base):
     countries: Mapped[list[str]] = mapped_column(JSONB, default=list)
 
     sponsor: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    contact_emails: Mapped[list[str]] = mapped_column(JSONB, default=list)
     search_text: Mapped[str | None] = mapped_column(Text, nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
