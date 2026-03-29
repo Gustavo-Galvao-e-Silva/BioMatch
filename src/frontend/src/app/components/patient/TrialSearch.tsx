@@ -31,8 +31,7 @@ export function TrialSearch({ onSelect }: TrialSearchProps) {
     fetchMatches();
   }, [user]);
 
-  // Filtro local simples para a barra de pesquisa por enquanto
-  const filteredMatches = matches.filter(m => 
+  const filteredMatches = matches.filter(m =>
     m.study.brief_title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     m.study.conditions.some((c: string) => c.toLowerCase().includes(searchTerm.toLowerCase()))
   );

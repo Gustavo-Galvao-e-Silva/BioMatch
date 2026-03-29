@@ -7,6 +7,20 @@ from data.pipeline import get_study_by_id
 
 router = APIRouter(prefix="/research", tags=["research"])
 
+
+@router.get("/my_studies", response_model=list[ResearchStudyOut])
+def get_my_studies(
+    clerk_user_id: str,
+    db: Session = Depends(get_db),
+):
+    user = db.query(User).filter(User.clerk_user_id == clerk_user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    if user.role != "researcher":
+        raise HTTPException(status_code=403, detail="Only researchers can access this endpoint")
+    return db.query(ResearchStudy).filter(ResearchStudy.researcher_id == user.id).all()
+
+
 @router.post("/claim_research", response_model=ResearchStudyOut, status_code=status.HTTP_201_CREATED)
 def claim_research(
     researcher_email: str,

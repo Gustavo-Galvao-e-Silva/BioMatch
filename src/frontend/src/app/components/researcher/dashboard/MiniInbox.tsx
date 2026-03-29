@@ -2,9 +2,7 @@ import { MessageSquare } from "lucide-react";
 import { Button } from "../../ui/button";
 
 export function MiniInbox() {
-  const chats = [
-    // Mock data removed - will be populated from API
-  ];
+  const chats: { from: string; msg: string; time: string }[] = [];
 
   return (
     <div className="space-y-4">

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { LayoutDashboard, FileText, MessageSquare, Settings, Fingerprint, Plus } from "lucide-react";
+import { LayoutDashboard, FileText, MessageSquare, Settings, Fingerprint, Database } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Header } from "../landing/Header";
 import { Button } from "../ui/button";
@@ -23,8 +23,8 @@ export function DashboardLayout({ children, role }: LayoutProps) {
       { name: "Referrals", icon: FileText, path: "/doctor/referrals" },
     ],
     researcher: [
-      { name: "My Trials", icon: LayoutDashboard, path: "/researcher" },
-      { name: "Analytics", icon: LayoutDashboard, path: "/researcher/stats" },
+      { name: "Overview", icon: LayoutDashboard, path: "/researcher" },
+      { name: "My Trials", icon: Database, path: "/researcher/manage" },
     ]
   };
 

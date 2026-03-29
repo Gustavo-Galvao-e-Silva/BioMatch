@@ -25,23 +25,29 @@ def build_patient_query_text(patient: PatientStatus) -> str:
     return "\n\n".join(parts)
 
 
+def _normalize_condition(c: str) -> str:
+    """Lowercase and strip punctuation so 'Diabetes Mellitus, Type 2' matches 'diabetes mellitus type 2'."""
+    import re
+    return re.sub(r"[^a-z0-9 ]", "", c.lower()).strip()
+
+
 def _compute_score(
     cosine_distance: float,
     patient: PatientStatus,
     study: ResearchStudy,
 ) -> float:
     similarity = max(0.0, 1.0 - cosine_distance)
-    base = similarity ** 0.5 * 8.0
+    base = similarity ** 0.5 * 7.0
 
     bonus = 0.0
 
-    # Condition overlap: +1.0 per match, cap at 1.0
+    # Condition overlap: +2.0 per match, cap at 3.0
     if patient.conditions:
-        patient_conds = {c.lower() for c in patient.conditions}
-        study_conds = set(study.conditions_normalized or [])
-        bonus += min(1.0, len(patient_conds & study_conds) * 1.0)
+        patient_conds = {_normalize_condition(c) for c in patient.conditions}
+        study_conds = {_normalize_condition(c) for c in (study.conditions_normalized or [])}
+        bonus += min(3.0, len(patient_conds & study_conds) * 2.0)
 
-    # Drug / intervention overlap: +0.5 per match, cap at 0.5
+    # Drug / intervention overlap: +0.5 per match, cap at 1.0
     if patient.drugs:
         patient_drug_tokens = {d.lower().split()[0] for d in patient.drugs}
         study_interventions = study.intervention_names or []
@@ -49,7 +55,7 @@ def _compute_score(
             1 for token in patient_drug_tokens
             if any(token in name for name in study_interventions)
         )
-        bonus += min(0.5, drug_hits * 0.5)
+        bonus += min(1.0, drug_hits * 0.5)
 
     return round(min(10.0, base + bonus), 2)
 

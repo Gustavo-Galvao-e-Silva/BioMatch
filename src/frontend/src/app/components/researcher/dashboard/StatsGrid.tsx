@@ -2,10 +2,10 @@ import { Database, Users, MessageSquare, BarChart3 } from "lucide-react";
 
 export function StatsGrid() {
   const stats = [
-    { label: "Active Trials", value: "12", icon: Database, color: "text-primary" },
-    { label: "Total Matches", value: "1,240", icon: Users, color: "text-secondary" },
-    { label: "Pending Messages", value: "8", icon: MessageSquare, color: "text-accent" },
-    { label: "Avg. Match Rate", value: "68%", icon: BarChart3, color: "text-primary" },
+    { label: "Active Trials", value: "—", icon: Database, color: "text-primary" },
+    { label: "Total Matches", value: "—", icon: Users, color: "text-secondary" },
+    { label: "Pending Messages", value: "—", icon: MessageSquare, color: "text-accent" },
+    { label: "Avg. Match Rate", value: "—", icon: BarChart3, color: "text-primary" },
   ];
 
   return (

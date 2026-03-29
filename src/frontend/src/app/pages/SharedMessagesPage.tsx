@@ -45,75 +45,7 @@ export function SharedMessagesPage({
   const { user } = useUser();
 
   const initialConversations: Conversation[] = useMemo(
-    () =>
-      conversations ?? [
-        {
-          id: "1",
-          name: "Dr. Emily Carter",
-          roleLabel: "Research Lead",
-          lastMessage: "We reviewed your profile and may have a matching trial.",
-          time: "2m ago",
-          unread: 2,
-          messages: [
-            {
-              id: "1-1",
-              role: "other",
-              content:
-                "Hello! We reviewed your submission and would like to ask a few follow-up questions.",
-            },
-            {
-              id: "1-2",
-              role: "self",
-              content: "Thank you. I’d be happy to provide more details.",
-            },
-            {
-              id: "1-3",
-              role: "other",
-              content:
-                "Great. Could you confirm your treatment timeline and latest records?",
-            },
-          ],
-        },
-        {
-          id: "2",
-          name: "John Hopkins Trial Team",
-          roleLabel: "Trial Coordinator",
-          lastMessage: "Could you upload your latest medical report?",
-          time: "1h ago",
-          messages: [
-            {
-              id: "2-1",
-              role: "other",
-              content:
-                "Hi! Could you upload your latest medical report so we can continue the screening process?",
-            },
-            {
-              id: "2-2",
-              role: "self",
-              content: "Yes, I can send that later today.",
-            },
-          ],
-        },
-        {
-          id: "3",
-          name: "Dr. Michael Chen",
-          roleLabel: "Oncology Specialist",
-          lastMessage: "Thank you — we will follow up with next steps soon.",
-          time: "Yesterday",
-          messages: [
-            {
-              id: "3-1",
-              role: "self",
-              content: "Thanks for the update.",
-            },
-            {
-              id: "3-2",
-              role: "other",
-              content: "Thank you — we will follow up with next steps soon.",
-            },
-          ],
-        },
-      ],
+    () => conversations ?? [],
     [conversations]
   );
 

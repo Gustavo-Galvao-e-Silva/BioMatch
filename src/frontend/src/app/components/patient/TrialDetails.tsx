@@ -100,7 +100,7 @@ export function TrialDetails({ trial, onBack }: TrialDetailsProps) {
               <Beaker className="w-5 h-5 text-primary" /> Interventions
             </h2>
             <div className="flex flex-wrap gap-2">
-              {["Drug A", "Placebo Controlled", "Biomarker Testing", "Genomic Analysis"].map((tag) => (
+              {(trial.interventions ?? []).map((tag: string) => (
                 <span key={tag} className="px-3 py-1 bg-primary/10 text-primary rounded-lg text-sm font-medium border border-primary/20">
                   {tag}
                 </span>
@@ -117,7 +117,7 @@ export function TrialDetails({ trial, onBack }: TrialDetailsProps) {
             <div className="space-y-4">
               <div>
                 <p className="text-[10px] text-muted-foreground uppercase font-black">Principal Investigator</p>
-                <p className="font-bold">Dr. Helena Vance</p>
+                <p className="font-bold">{trial.principal_investigator ?? "—"}</p>
               </div>
               <Button variant="outline" className="w-full gap-2 border-primary/30 hover:bg-primary/5">
                 <Mail className="w-4 h-4" /> Message Researcher

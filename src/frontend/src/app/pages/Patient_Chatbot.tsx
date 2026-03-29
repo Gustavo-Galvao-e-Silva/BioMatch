@@ -47,14 +47,7 @@ export default function ChatBotPage() {
   ]);
 
   const [chatState, setChatState] = useState<ChatState>({
-    current_goals: [
-      "Determine duration of symptoms",
-      "Check for history of allergies",
-      "Confirm if pain is localized",
-      "Determine patient age",
-      "Determine which country patient is from",
-      "Figure out the patient's occupation",
-    ],
+    current_goals: [],
     patient_summary: {
       findings_summary: "",
       confidence_score: 0.0,

@@ -30,8 +30,8 @@ _DEFAULT_PATH = Path(__file__).parent / "studies_final.json"
 _TEST_USERS = [
     {
         "clerk_user_id": "seed_patient_t2d",
-        "email": "patient.diabetes@demo.com",
-        "full_name": "Carlos Mendes",
+        "email": "carlos.mendes.81@gmail.com",
+        "full_name": "Carlos Eduardo Mendes",
         "role": "user",
         "statuses": [
             {
@@ -51,8 +51,8 @@ _TEST_USERS = [
     },
     {
         "clerk_user_id": "seed_patient_breast_cancer",
-        "email": "patient.cancer@demo.com",
-        "full_name": "Ana Lima",
+        "email": "ana.beatriz.lima@outlook.com",
+        "full_name": "Ana Beatriz Lima",
         "role": "user",
         "statuses": [
             {
@@ -72,8 +72,8 @@ _TEST_USERS = [
     },
     {
         "clerk_user_id": "seed_patient_depression",
-        "email": "patient.depression@demo.com",
-        "full_name": "João Ferreira",
+        "email": "joao.f.costa@hotmail.com",
+        "full_name": "João Felipe Costa",
         "role": "user",
         "statuses": [
             {
@@ -93,8 +93,8 @@ _TEST_USERS = [
     },
     {
         "clerk_user_id": "seed_patient_alzheimer",
-        "email": "patient.alzheimer@demo.com",
-        "full_name": "Maria Santos",
+        "email": "maria.santos.1953@sapo.pt",
+        "full_name": "Maria Helena Santos",
         "role": "user",
         "statuses": [
             {
@@ -290,6 +290,169 @@ _TEST_USERS = [
             "drugs": ["Valproate"],
             "symptoms": ["seizures"]
         }]
+    },
+    {
+        "clerk_user_id": "seed_patient_hypertension",
+        "email": "roberto.nascimento@terra.com.br",
+        "full_name": "Roberto Nascimento",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 58,
+                "sex": "MALE",
+                "location": "Brazil",
+                "medical_summary": (
+                    "Middle-aged man with uncontrolled stage 2 hypertension and early-stage "
+                    "chronic kidney disease (CKD stage 2). BP consistently above 160/100 despite dual therapy."
+                ),
+                "symptoms": ["headaches", "dizziness", "occasional nosebleeds", "fatigue"],
+                "drugs": ["Amlodipine 10mg", "Losartan 100mg"],
+                "history": "Hypertension diagnosed at 48. Smoker for 20 years, quit 4 years ago. Father had stroke.",
+                "conditions": ["Hypertension", "Chronic Kidney Disease Stage 2"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_asthma",
+        "email": "isabela.rocha.sp@gmail.com",
+        "full_name": "Isabela Rocha",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 34,
+                "sex": "FEMALE",
+                "location": "Brazil",
+                "medical_summary": (
+                    "Young woman with moderate-to-severe allergic asthma, poorly controlled on "
+                    "inhaled corticosteroids. Frequent nocturnal symptoms. Elevated IgE and eosinophilia."
+                ),
+                "symptoms": ["wheezing", "nocturnal cough", "chest tightness", "exercise-induced dyspnea"],
+                "drugs": ["Fluticasone/Salmeterol 250/25mcg", "Salbutamol PRN", "Montelukast 10mg"],
+                "history": "Asthma since childhood. Allergic rhinitis. Two ED visits in past year.",
+                "conditions": ["Asthma", "Allergic Rhinitis"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_parkinson",
+        "email": "manuel.oliveira.porto@gmail.com",
+        "full_name": "Manuel Augusto Oliveira",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 66,
+                "sex": "MALE",
+                "location": "Portugal",
+                "medical_summary": (
+                    "Retired engineer with early-stage Parkinson's disease diagnosed 18 months ago. "
+                    "Mild resting tremor in right hand. Good response to levodopa so far. Hoehn & Yahr stage 2."
+                ),
+                "symptoms": ["resting tremor", "bradykinesia", "mild rigidity", "reduced arm swing"],
+                "drugs": ["Levodopa/Carbidopa 100/25mg TID", "Pramipexole 0.5mg"],
+                "history": "Non-smoker. No family history of Parkinson's. Hypertension controlled with ramipril.",
+                "conditions": ["Parkinson's Disease"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_lupus",
+        "email": "fernanda.cavalcanti@uol.com.br",
+        "full_name": "Fernanda Cavalcanti",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 31,
+                "sex": "FEMALE",
+                "location": "Brazil",
+                "medical_summary": (
+                    "Young woman with systemic lupus erythematosus, moderately active disease. "
+                    "Recent flare with arthritis and mild proteinuria. ANA positive, anti-dsDNA elevated. "
+                    "SLEDAI score 8."
+                ),
+                "symptoms": ["joint pain", "malar rash", "fatigue", "hair loss", "mouth ulcers"],
+                "drugs": ["Hydroxychloroquine 400mg", "Prednisone 10mg", "Mycophenolate mofetil 2g"],
+                "history": "SLE diagnosed at 27. Prior episode of pleuritis. No renal biopsy performed.",
+                "conditions": ["Systemic Lupus Erythematosus"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_copd",
+        "email": "antonio.s.marques@bol.com.br",
+        "full_name": "Antônio Sérgio Marques",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 63,
+                "sex": "MALE",
+                "location": "Brazil",
+                "medical_summary": (
+                    "Heavy ex-smoker with GOLD stage III COPD. FEV1 42% predicted. "
+                    "Two exacerbations requiring hospitalization in the past 12 months. Significant dyspnea on exertion."
+                ),
+                "symptoms": ["chronic productive cough", "severe dyspnea", "exercise intolerance", "wheezing"],
+                "drugs": ["Tiotropium 18mcg", "Formoterol/Budesonide 12/400mcg", "Roflumilast 500mcg"],
+                "history": "Smoked 40 pack-years, quit 3 years ago. Childhood asthma. Occupational dust exposure.",
+                "conditions": ["COPD"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_ms",
+        "email": "patricia.drummond@gmail.com",
+        "full_name": "Patrícia Drummond",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 38,
+                "sex": "FEMALE",
+                "location": "Brazil",
+                "medical_summary": (
+                    "Woman with relapsing-remitting multiple sclerosis, currently on disease-modifying therapy. "
+                    "Two relapses in the last two years. MRI shows new T2 lesions in periventricular white matter. "
+                    "EDSS 2.5."
+                ),
+                "symptoms": ["episodic limb weakness", "optic neuritis history", "fatigue", "bladder urgency"],
+                "drugs": ["Natalizumab 300mg IV monthly", "Baclofen 10mg"],
+                "history": "Diagnosed with RRMS at 33. No family history. Prior relapse with sensory deficits resolved.",
+                "conditions": ["Multiple Sclerosis, Relapsing-Remitting"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "seed_patient_olive_t2d",
+        "email": "lucas.fonseca.med@gmail.com",
+        "full_name": "Lucas Fonseca",
+        "role": "user",
+        "statuses": [
+            {
+                "age": 54,
+                "sex": "MALE",
+                "location": "Tunisia",
+                "medical_summary": (
+                    "Middle-aged man with Type 2 Diabetes Mellitus, suboptimally controlled on oral "
+                    "agents. HbA1c 8.7%. Fasting glucose consistently above 180 mg/dL. BMI 29. "
+                    "Interested in complementary and plant-based therapeutic approaches to improve "
+                    "glycemic control. No significant renal or hepatic impairment. No history of "
+                    "cardiovascular events."
+                ),
+                "symptoms": ["fatigue", "polyuria", "postprandial hyperglycemia", "mild peripheral tingling"],
+                "drugs": ["Metformin 850mg BID", "Sitagliptin 100mg"],
+                "history": (
+                    "T2DM diagnosed 7 years ago. Previously trialled sulfonylurea but discontinued "
+                    "due to hypoglycemia. No insulin use. Mild dyslipidemia managed with diet. "
+                    "Non-smoker. Moderate alcohol consumption."
+                ),
+                "conditions": ["Diabetes Mellitus, Type 2", "Dyslipidemia"],
+            }
+        ],
+    },
+    {
+        "clerk_user_id": "user_3Bcj4L9HRvebe7eSOQv5d4hx8wu",
+        "email": "gugagalvao@live.com",
+        "full_name": "Gustavo Silva",
+        "role": "researcher",
+        "statuses": [],
     },
 ]
 

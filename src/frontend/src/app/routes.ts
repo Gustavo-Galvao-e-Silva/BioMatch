@@ -13,6 +13,7 @@ import DoctorDashboard from "./pages/doctor/Dashboard";
 
 import ResearcherDashboard from "./pages/researcher/Dashboard";
 import ClaimResearch from "./pages/researcher/ClaimResearch";
+import MyTrialsPage from "./pages/researcher/MyTrialsPage";
 import PatientMessagesPage from "./pages/PatientMessagesPage";
 import ChatBotPage from "./pages/Patient_Chatbot";
 
@@ -32,6 +33,6 @@ export const router = createBrowserRouter([
 
   { path: "/researcher", Component: ResearcherDashboard, },
   { path: "/researcher/claim", Component: ClaimResearch, },
-  { path: "/researcher/manage", Component: ResearcherDashboard, },
+  { path: "/researcher/manage", Component: MyTrialsPage, },
   { path: "/researcher/messages", Component: ResearcherDashboard, },
 ]);
