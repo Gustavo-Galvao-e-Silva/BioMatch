@@ -1,20 +1,23 @@
+from typing import Any
+
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 import httpx
 
 router = APIRouter(prefix="/chatbot", tags=["chatbot"])
 
-
-UPSTREAM_CHATBOT_URL = "http://127.0.0.1:9000/chat"
+UPSTREAM_CHATBOT_URL = "http://44.223.29.123:8000"
 
 
 class ChatRequest(BaseModel):
+    state: dict[str, Any]
     message: str
 
 
 class ChatResponse(BaseModel):
     response: str
     end: bool = False
+    state: dict[str, Any] | None = None
 
 
 @router.post("/post_patient_message", response_model=ChatResponse)
@@ -23,7 +26,10 @@ async def send_message_to_chatbot(payload: ChatRequest):
         async with httpx.AsyncClient(timeout=30.0) as client:
             upstream_response = await client.post(
                 UPSTREAM_CHATBOT_URL,
-                json={"message": payload.message},
+                json={
+                    "state": payload.state,
+                    "message": payload.message,
+                },
             )
 
         upstream_response.raise_for_status()
@@ -47,13 +53,14 @@ async def send_message_to_chatbot(payload: ChatRequest):
             detail="Upstream chatbot returned invalid JSON",
         )
 
-    if "response" not in data:
+    if "response" not in data and "message" not in data:
         raise HTTPException(
             status_code=502,
-            detail="Upstream chatbot response missing 'response' field",
+            detail="Upstream chatbot response missing 'response' or 'message' field",
         )
 
     return ChatResponse(
-        response=data["response"],
+        response=data.get("response") or data.get("message"),
         end=bool(data.get("end", False)),
+        state=data.get("state"),
     )

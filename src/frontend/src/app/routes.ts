@@ -14,6 +14,7 @@ import DoctorDashboard from "./pages/doctor/Dashboard";
 import ResearcherDashboard from "./pages/researcher/Dashboard";
 import ClaimResearch from "./pages/researcher/ClaimResearch";
 import PatientMessagesPage from "./pages/PatientMessagesPage";
+import ChatBotPage from "./pages/Patient_Chatbot";
 
 export const router = createBrowserRouter([
   { path: "/login/*", Component: LoginPage, },
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
   
   { path: "/patient", Component: PatientDashboard, },
   { path: "/patient/messages", Component: PatientMessagesPage, },
+  {path: "/patient-chatbot", Component: ChatBotPage},
 
   { path: "/doctor", Component: DoctorDashboard, },
 

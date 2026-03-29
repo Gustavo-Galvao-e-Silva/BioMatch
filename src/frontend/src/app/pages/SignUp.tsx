@@ -72,9 +72,9 @@ export default function SignUpPage() {
       if (result.status === "complete") {
         await setActive({ session: result.createdSessionId });
         const redirectByRole: Record<Role, string> = {
-            user: "/patient",
+            user: "/patient-chatbot",
             doctor: "/doctor",
-            researcher: "/research",
+            researcher: "/researcher",
         };
 
         navigate(redirectByRole[form.role]);

@@ -24,7 +24,7 @@ export default function PostLoginRedirect() {
         break;
       case "user":
       default:
-        navigate("/patient", { replace: true });
+        navigate("/patient-chatbot", { replace: true });
         break;
     }
   }, [isLoaded, isSignedIn, user, navigate]);

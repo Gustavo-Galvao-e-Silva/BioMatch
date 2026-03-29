@@ -7,7 +7,27 @@ type Message = {
   content: string;
 };
 
-export default function ChatPage() {
+type PatientSummary = {
+  findings_summary: string;
+  confidence_score: number;
+};
+
+type ChatState = {
+  current_goals: string[];
+  patient_summary: PatientSummary;
+  awaiting_patient: boolean;
+  last_patient_message: string;
+  last_doctor_message: string;
+};
+
+type ChatApiResponse = {
+  state?: ChatState;
+  response?: string;
+  message?: string;
+  end?: boolean;
+};
+
+export default function ChatBotPage() {
   const navigate = useNavigate();
 
   const [messages, setMessages] = useState<Message[]>([
@@ -17,6 +37,25 @@ export default function ChatPage() {
       content: "Hi! How can I help you today?",
     },
   ]);
+
+  const [chatState, setChatState] = useState<ChatState>({
+    current_goals: [
+      "Determine duration of symptoms",
+      "Check for history of allergies",
+      "Confirm if pain is localized",
+      "Determine patient age",
+      "Determine which country patient is from",
+      "Figure out the patient's occupation",
+    ],
+    patient_summary: {
+      findings_summary: "",
+      confidence_score: 0.0,
+    },
+    awaiting_patient: false,
+    last_patient_message: "",
+    last_doctor_message: "",
+  });
+
   const [input, setInput] = useState("");
   const [isSending, setIsSending] = useState(false);
 
@@ -37,29 +76,42 @@ export default function ChatPage() {
     setIsSending(true);
 
     try {
-      const response = await fetch("http://localhost:8000/chatbot/post_patient_message", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          message: trimmedInput,
-        }),
-      });
+      const response = await fetch(
+        "http://localhost:8000/chatbot/post_patient_message",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            state: {
+              ...chatState,
+              last_patient_message: trimmedInput,
+            },
+            message: trimmedInput,
+          }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to send message.");
       }
 
-      const data = await response.json();
+      const data: ChatApiResponse = await response.json();
+
+      if (data.state) {
+        setChatState(data.state);
+      }
+
+      const assistantText =
+        data.response ||
+        data.message ||
+        "The chatbot replied, but no message was returned.";
 
       const assistantMessage: Message = {
         id: Date.now() + 1,
         role: "assistant",
-        content:
-          data.response ||
-          data.message ||
-          "The chatbot replied, but no message was returned.",
+        content: assistantText,
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
