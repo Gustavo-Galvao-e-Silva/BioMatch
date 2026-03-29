@@ -145,6 +145,16 @@ class ResearcherOut(BaseModel):
     email: str | None
 
 
+class StudyMatchOut(BaseModel):
+    study: "ResearchStudyOut"
+    score: float
+
+
+class PatientMatchOut(BaseModel):
+    patient: "PatientStatusOut"
+    score: float
+
+
 class PatientStatusCreate(BaseModel):
     user_id: int
     sex: str | None = None

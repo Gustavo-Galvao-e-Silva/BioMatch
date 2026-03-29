@@ -22,3 +22,8 @@ pipeline *ARGS:
 seed *ARGS:
     cd src/backend && .venv/bin/python data/seed_db.py {{ARGS}}
 
+setup:
+    just up
+    sleep 2
+    just seed
+

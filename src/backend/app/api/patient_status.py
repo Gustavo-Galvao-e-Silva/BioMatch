@@ -4,6 +4,8 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import User, PatientStatus
 from app.schemas import PatientStatusCreate, PatientStatusOut
+from app.api.matching import build_patient_query_text
+from data.embedder import get_embedder
 
 router = APIRouter(prefix="/patient-status", tags=["patient-statuses"])
 
@@ -30,6 +32,10 @@ def create_patient_status(
         drugs=payload.drugs,
         symptoms=payload.symptoms,
     )
+
+    query_text = build_patient_query_text(patient_status)
+    if query_text.strip():
+        patient_status.patient_vector_summary = get_embedder("local").embed(query_text)
 
     db.add(patient_status)
     db.commit()
