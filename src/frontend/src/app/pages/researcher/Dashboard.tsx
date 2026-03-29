@@ -14,7 +14,6 @@ export default function ResearcherDashboard() {
         className="space-y-8"
       >
         <ResearcherHeader />
-        <StatsGrid />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <TrialsList className="lg:col-span-2" />

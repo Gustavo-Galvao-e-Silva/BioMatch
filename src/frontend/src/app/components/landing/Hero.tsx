@@ -69,32 +69,6 @@ export function Hero() {
               </Button>
             </MotionDiv>
 
-            {/* Stats */}
-            <MotionDiv
-              initial={{ y: 50, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12"
-            >
-              {[
-                { label: "Active Trials", value: "10K+", icon: FlaskConical },
-                { label: "Patients Matched", value: "50K+", icon: UserRound },
-                { label: "Success Rate", value: "95%", icon: TrendingUp },
-              ].map((stat, i) => (
-                <motion.div
-                  key={i}
-                  className="text-center"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-2">
-                    <stat.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="text-2xl font-bold text-foreground">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </motion.div>
-              ))}
-            </MotionDiv>
           </div>
         </div>
       </section>

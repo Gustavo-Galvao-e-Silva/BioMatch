@@ -112,6 +112,185 @@ _TEST_USERS = [
             }
         ],
     },
+    # --- NEUROLOGIA (PARKINSON) ---
+    {
+        "clerk_user_id": "seed_parkinson_1",
+        "email": "parkinson@demo.com",
+        "full_name": "João Mendes",
+        "role": "user",
+        "statuses": [{
+            "age": 72, "sex": "MALE", "location": "Boston",
+            "medical_summary": "Parkinson’s disease with motor fluctuations.",
+            "conditions": ["Parkinson Disease"],
+            "drugs": ["Levodopa", "Carbidopa"],
+            "symptoms": ["tremor", "bradykinesia", "rigidity"]
+        }]
+    },
+
+    # --- PSIQUIATRIA (ADHD) ---
+    {
+        "clerk_user_id": "seed_adhd_1",
+        "email": "adhd@demo.com",
+        "full_name": "Lucas Pereira",
+        "role": "user",
+        "statuses": [{
+            "age": 23, "sex": "MALE", "location": "Austin",
+            "medical_summary": "Attention-Deficit/Hyperactivity Disorder (ADHD).",
+            "conditions": ["ADHD"],
+            "drugs": ["Adderall"],
+            "symptoms": ["inattention", "impulsivity"]
+        }]
+    },
+
+    # --- GASTRO (CROHN) ---
+    {
+        "clerk_user_id": "seed_crohn_1",
+        "email": "crohn@demo.com",
+        "full_name": "Fernanda Lima",
+        "role": "user",
+        "statuses": [{
+            "age": 29, "sex": "FEMALE", "location": "Denver",
+            "medical_summary": "Crohn’s disease with ileal involvement.",
+            "conditions": ["Crohn Disease"],
+            "drugs": ["Infliximab"],
+            "symptoms": ["abdominal pain", "diarrhea"]
+        }]
+    },
+
+    # --- INFECTO (HIV) ---
+    {
+        "clerk_user_id": "seed_hiv_1",
+        "email": "hiv@demo.com",
+        "full_name": "Carlos Henrique",
+        "role": "user",
+        "statuses": [{
+            "age": 41, "sex": "MALE", "location": "San Francisco",
+            "medical_summary": "HIV infection, stable on ART.",
+            "conditions": ["HIV"],
+            "drugs": ["Biktarvy"],
+            "symptoms": ["fatigue"]
+        }]
+    },
+
+    # --- DERMATOLOGIA (PSORIASIS) ---
+    {
+        "clerk_user_id": "seed_psoriasis_1",
+        "email": "psoriasis@demo.com",
+        "full_name": "Ana Clara",
+        "role": "user",
+        "statuses": [{
+            "age": 37, "sex": "FEMALE", "location": "Seattle",
+            "medical_summary": "Moderate plaque psoriasis.",
+            "conditions": ["Psoriasis"],
+            "drugs": ["Secukinumab"],
+            "symptoms": ["skin plaques", "itching"]
+        }]
+    },
+
+    # --- RESPIRATÓRIO (ASTHMA) ---
+    {
+        "clerk_user_id": "seed_asthma_1",
+        "email": "asthma@demo.com",
+        "full_name": "Pedro Alves",
+        "role": "user",
+        "statuses": [{
+            "age": 19, "sex": "MALE", "location": "Orlando",
+            "medical_summary": "Mild persistent asthma.",
+            "conditions": ["Asthma"],
+            "drugs": ["Albuterol"],
+            "symptoms": ["wheezing", "shortness of breath"]
+        }]
+    },
+
+    # --- DIABETES ---
+    {
+        "clerk_user_id": "seed_diabetes_1",
+        "email": "diabetes@demo.com",
+        "full_name": "Mariana Costa",
+        "role": "user",
+        "statuses": [{
+            "age": 55, "sex": "FEMALE", "location": "Phoenix",
+            "medical_summary": "Type 2 diabetes mellitus.",
+            "conditions": ["Diabetes Mellitus Type 2"],
+            "drugs": ["Metformin"],
+            "symptoms": ["polyuria", "fatigue"]
+        }]
+    },
+
+    # --- HIPERTENSÃO ---
+    {
+        "clerk_user_id": "seed_hypertension_1",
+        "email": "hypertension@demo.com",
+        "full_name": "Ricardo Teixeira",
+        "role": "user",
+        "statuses": [{
+            "age": 63, "sex": "MALE", "location": "Dallas",
+            "medical_summary": "Essential hypertension.",
+            "conditions": ["Hypertension"],
+            "drugs": ["Losartan"],
+            "symptoms": ["headache"]
+        }]
+    },
+
+    # --- DEPRESSÃO ---
+    {
+        "clerk_user_id": "seed_depression_1",
+        "email": "depression@demo.com",
+        "full_name": "Juliana Rocha",
+        "role": "user",
+        "statuses": [{
+            "age": 31, "sex": "FEMALE", "location": "Atlanta",
+            "medical_summary": "Major depressive disorder.",
+            "conditions": ["Depression"],
+            "drugs": ["Sertraline"],
+            "symptoms": ["low mood", "insomnia"]
+        }]
+    },
+
+    # --- ALZHEIMER ---
+    {
+        "clerk_user_id": "seed_alzheimer_1",
+        "email": "alz@demo.com",
+        "full_name": "Antônio Silva",
+        "role": "user",
+        "statuses": [{
+            "age": 78, "sex": "MALE", "location": "Los Angeles",
+            "medical_summary": "Alzheimer’s disease, moderate stage.",
+            "conditions": ["Alzheimer Disease"],
+            "drugs": ["Donepezil"],
+            "symptoms": ["memory loss", "confusion"]
+        }]
+    },
+
+    # --- ARTRITE ---
+    {
+        "clerk_user_id": "seed_arthritis_1",
+        "email": "arthritis@demo.com",
+        "full_name": "Patrícia Gomes",
+        "role": "user",
+        "statuses": [{
+            "age": 50, "sex": "FEMALE", "location": "Chicago",
+            "medical_summary": "Rheumatoid arthritis.",
+            "conditions": ["Rheumatoid Arthritis"],
+            "drugs": ["Methotrexate"],
+            "symptoms": ["joint pain", "swelling"]
+        }]
+    },
+
+    # --- EPILEPSIA ---
+    {
+        "clerk_user_id": "seed_epilepsy_1",
+        "email": "epilepsy@demo.com",
+        "full_name": "Bruno Martins",
+        "role": "user",
+        "statuses": [{
+            "age": 27, "sex": "MALE", "location": "Houston",
+            "medical_summary": "Generalized epilepsy.",
+            "conditions": ["Epilepsy"],
+            "drugs": ["Valproate"],
+            "symptoms": ["seizures"]
+        }]
+    },
 ]
 
 

@@ -91,20 +91,23 @@ def _query_matches_for_patient(
     )
 
 
-@router.get("/patient/{user_id}", response_model=list[StudyMatchOut])
+@router.get("/patient/{clerk_id}", response_model=list[StudyMatchOut])
 def match_user_to_studies(
-    user_id: int,
+    clerk_id: str,
     db: Session = Depends(get_db),
 ):
-    user = db.get(User, user_id)
+    user = db.query(User).filter(User.clerk_user_id == clerk_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
     statuses = (
         db.query(PatientStatus)
-        .filter(PatientStatus.user_id == user_id)
+        .filter(PatientStatus.user_id == user.id)
         .all()
     )
+    print("PAPAGAAAAAAIO")
+    print(statuses)
+    print("PAPAGAAAAAAIO")
     if not statuses:
         raise HTTPException(status_code=404, detail="No patient statuses found for this user")
 
