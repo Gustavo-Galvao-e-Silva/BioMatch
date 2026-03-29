@@ -1,23 +1,29 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.orm import Session
+
 from app.database import get_db
 from app.models import User, PatientStatus
 from app.schemas import PatientStatusCreate, UserOut
+from backend.data import embedder
 
 router = APIRouter(prefix="/patient-status", tags=["patient-statuses"])
+
 
 @router.post("/", response_model=UserOut)
 def update_patient_medical_info(
     payload: PatientStatusCreate,
     db: Session = Depends(get_db),
 ):
-    # 1. Buscar o usuário pelo ID (Integer interno)
-    user = db.query(User).filter(User.id == payload.user_id).first()
+    # 1. Buscar o usuário pelo Clerk ID
+    user = db.execute(
+        select(User).where(User.clerk_user_id == payload.clerk_user_id)
+    ).scalars().first()
+
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
 
-    # 2. Atualizar os campos principais que agora estão no User
+    # 2. Atualizar os campos principais no User
     user.location = payload.location
     user.bio = payload.description
 
@@ -33,13 +39,13 @@ def update_patient_medical_info(
         "symptoms": payload.symptoms,
     }
 
-    # 4. Upsert PatientStatus para o motor de matching (filtros e vetor)
+    # 4. Upsert PatientStatus usando o user.id interno encontrado pelo clerk_user_id
     patient_status = db.execute(
-        select(PatientStatus).where(PatientStatus.user_id == payload.user_id)
+        select(PatientStatus).where(PatientStatus.user_id == user.id)
     ).scalars().first()
 
     if patient_status is None:
-        patient_status = PatientStatus(user_id=payload.user_id)
+        patient_status = PatientStatus(user_id=user.id)
         db.add(patient_status)
 
     patient_status.age = payload.age
@@ -53,6 +59,10 @@ def update_patient_medical_info(
     patient_status.drugs = payload.drugs
     patient_status.symptoms = payload.symptoms
 
+    emb = embedder.get_embedder()
+    embedding = emb.embed(patient_status)
+
+    patient_status.patient_vector_summary = embedding
     db.commit()
     db.refresh(user)
 

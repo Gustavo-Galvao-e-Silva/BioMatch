@@ -57,12 +57,13 @@ def _clerk_role(data: dict) -> str | None:
 
 
 def _user_fields_from_clerk(data: dict) -> dict:
+    role = (data.get("unsafe_metadata") or {}).get("role", "user")
+
     return {
         "clerk_user_id": data["id"],
         "email": _clerk_primary_email(data),
-        "phone_number": _clerk_primary_phone(data),
         "full_name": _clerk_full_name(data),
-        "role": _clerk_role(data),
+        "role": role,
     }
 
 
@@ -76,7 +77,6 @@ def _sync_user_from_clerk(db: Session, data: dict) -> tuple[User, bool]:
 
     if user:
         user.email = fields["email"]
-        user.phone_number = fields["phone_number"]
         user.full_name = fields["full_name"]
         user.role = fields["role"]
         db.commit()
@@ -86,7 +86,6 @@ def _sync_user_from_clerk(db: Session, data: dict) -> tuple[User, bool]:
     user = User(
         clerk_user_id=clerk_user_id,
         email=fields["email"],
-        phone_number=fields["phone_number"],
         full_name=fields["full_name"],
         role=fields["role"],
     )

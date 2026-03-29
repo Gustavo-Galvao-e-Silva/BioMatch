@@ -35,11 +35,15 @@ class PatientMatchOut(BaseModel):
     score: float
 
 
+from datetime import datetime
+from pydantic import BaseModel, ConfigDict
+
+
 class PatientStatusCreate(BaseModel):
-    user_id: int
+    clerk_user_id: str
+    age: int | None = None
     sex: str | None = None
     location: str | None = None
-    age: int | None = None
     description: str | None = None
     history: str | None = None
     medical_notes: str | None = None
